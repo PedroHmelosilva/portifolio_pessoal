@@ -1500,6 +1500,8 @@ div.formulario-para-entrar-em-contato h1:hover{
 
     div#link-para-outras-paginas{
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     div.btn{
@@ -1508,9 +1510,12 @@ div.formulario-para-entrar-em-contato h1:hover{
         padding: 0;
         text-decoration: none;
         color: rgb(255, 255, 255);
-        font-size: 5px;
+        font-size: 1px;
         margin-bottom: 0;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     div.btn::after{

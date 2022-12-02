@@ -9,6 +9,10 @@
 
 /*Navbar*/
 
+li{
+    margin: 0;
+}
+
 div#link-para-outras-paginas{
     display: none;
 }
@@ -137,7 +141,7 @@ nav h1:hover{
 
 .nav-list li{
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin-left: 0px;
 }
 
 .mobile-menu{
@@ -167,8 +171,25 @@ ul li a{
     color: rgb(255, 255, 255);
 }
 
+a.nav-link.dropdown-toggle{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+a.nav-link.dropdown-toggle:hover{
+    background-color: transparent;
+    border: solid rgba(255, 255, 255, 0.39);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
 ul.dropdown-menu.dropdown-menu-dark{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.719);
     border: 2px solid rgba(255, 255, 255, 0.188);
     backdrop-filter: blur(15px);
     color: rgb(255, 255, 255);
@@ -177,7 +198,7 @@ ul.dropdown-menu.dropdown-menu-dark{
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
-    width: 300px;
+    width: 200px;
 }
 
 li a.dropdown-item{
@@ -193,23 +214,6 @@ li a.dropdown-item:active{
     border: 2px solid rgba(255, 255, 255, 0.288);
     backdrop-filter: blur(15px);
     box-shadow: 0 0 15px rgb(255, 255, 255), inset 0 0 15px rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-a.nav-link.dropdown-toggle{
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 5px;
-    padding-top: 10px;
-    margin-top: 5px;
-    transition: 0.2s;
-}
-
-a.nav-link.dropdown-toggle:hover{
-    background-color: transparent;
-    border: solid rgba(255, 255, 255, 0.39);
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
@@ -329,6 +333,13 @@ p{
     width: 3vw;
     height: 3vh;
     color: rgb(0, 0, 0);
+}
+
+svg.icon04{
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 10px;
 }
 
 li.content{
@@ -621,6 +632,46 @@ button.btn.btn-primary:active{
 
 @media (min-width: 320px) and (max-width: 480px){
     /*Navbar*/
+
+    div#link-para-outras-paginas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.btn{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1px;
+        margin-bottom: 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    div.btn::after{
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    
+    div.btn:hover::after{
+        width: 100%;
+    }
+
+    hr.line05{
+        margin-top: 0px;
+        margin: 0;
+    } 
 
     /*1° Parte da Página*/
 
