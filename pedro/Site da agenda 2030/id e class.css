@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte';
+    src: url('KGRedHands.ttf') format('truetype'), url('KGRedHandsOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#lista-topicos{
+    list-style-type: none;
+    padding: 0;
+}
+
+#lista-topicos{
+    text-decoration: none;
+    color: black;
+}
+
+#lista-topicos{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+
+#Continuação-das-ODS{
+    text-decoration: none;
+    color: black;
+}
+
+#a01{
+    padding-left: 29%;
+}
+
+#link-topo{
+    text-decoration: none;
+    color: white;
+    background-color: aqua;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+#link-topo:hover{
+    background-color: #FF6968;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+.row{
+    padding: 0 20px;
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.card02{
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin: 50px;
+}
+
+.cardtable{
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    margin-right: 100px;
+
+    padding: 20px;
+}
+
+.cardtable02{
+    background-color: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+.imagem{
+    background-color: ff0000;
+    padding: 20px;
+}
+
+.imagem{
+    display: block;
+    margin: auto;
+}
+
+
+#lista-topicos:hover{
+    list-style-type: none;
+    padding: 0;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+#lista-topicos{
+    text-decoration: none;
+    color: black;
+}
+
+#lista-topicos{
+    border-bottom: 1px solid #ddd;
+    padding: 8px 16px;
+}
+
+#Continuação-das-ODS{
+    text-decoration: none;
+    color: black;
+}
+#tabela{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.roda{
+    background: rgba(255, 255, 255, 0.521);
+    padding: 20px;
+    text-align: right;
+    
+}
+
+#ods:hover{
+    background-color: rgba(0, 0, 0, 0.432);
+}
+
+#ods{
+    background-color: rgba(0, 0, 0, 0.281);
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+#teste{
+    color: #0392ff00;
+}
+
+#rodape{
+    background-color: #0392ff00;
+    text-align: center;
+}
+
+.botao:hover{
+    background-color: #FF6968;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+.imagem{
+    display: block;
+    margin: auto;
+}

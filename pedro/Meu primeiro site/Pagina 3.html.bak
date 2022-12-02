@@ -1,0 +1,102 @@
+<html>
+<meta charset="utf-8"
+        <head>
+                <img src="https://cdn.pixabay.com/photo/2019/06/16/12/06/garbage-4277613_960_720.jpg" height="75%" width="100%"></>
+				<hr size=9 color=green width=100% align+center>
+                <h1 align="center"><font size= 13pt color=green="arial">TIPOS DE SUSTENTABILIDADE</h1>
+                <title>SUSTENTABILIDADE</title>
+				
+                <style>
+                    table, th, td {
+					    border: 1px solid black;
+					
+				     }
+					 
+					 thead{
+					     background-color: rgb(99, 163, 255);
+					 }
+					 td{
+					     padding: 5px;
+					 }
+                </style>				 
+        </head>
+
+        <body>
+                         
+                        <table>
+						
+						     <thead>
+							     <tr>
+							     <th>SUSTENTABILIDADE AMBIENTAL</th>
+								 <th>SUSTENTABILIDADE SOCIAL</th>
+								 <th>SUSTENTABILIDADE EMPRESARIAL</th>
+								 <th>SUSTENTABILIDADE ECONÔMICA</th>
+							     </tr>
+							 </thead>
+							     <tbody>
+							 <tr>
+							     <td>A Sustentabilidade ambiental abrange a conservação e a manutenção do meio ambiente.</td>
+								 <td>A sustentabilidade social sugere a igualdade dos indivíduos, baseado no bem estar da população.</td>
+								 <td>Tem como objetivo fazer com que a empresa possua uma postura de responsabilidade com os valores ambientais e sociais. Além de fundamentada na preservação do meio ambiente e melhoria da qualidade de vida das pessoas.</td>
+								 <td>A sustentabilidade econômica é fundamentada num modelo de gestão sustentável. Isso implica na gestão de adequada dos recursos naturais, que objetivam o crescimento econômico, o desenvolvimento social e melhoria da distribuição de renda.</td>
+							 </tr>
+							     </tbody>
+						     
+						</table>
+						
+						<br></br>
+						
+                         <hr size=9 color=green width=100% align+center>
+						 
+                        <br></br>
+                        
+                        <h1 align="center"><font size= 12pt color=green="arial">TRIPÉ DA SUSTENTABILIDADE</h1>
+                        
+                         <p align="justify"><font size="5" face="arial" color="black">Escolhemos esse tema por ser um tema amplo e importatante. A concentização das pessoas sobre isso e a importancia de se preserva-lo.
+                 Veremos o que é sustentabilidade e como hoje as pessoas ajudam o meio ambiente através da sustentabilidade</font></p> 
+						 
+						 <br></br>
+
+                         <table>
+						
+						     <thead>
+							     <tr>
+							     <th>SOCIAL</th>
+								 <th>ECONÔMICO</th>
+								 <th>AMBIENTAL</th>
+							     </tr>
+							 </thead>
+							     <tbody>
+							 <tr>
+							     <td>Engloba as pessoas e suas condições de vida, como educação, saúde, violência, lazer, dentre outros aspectos.</td>
+								 <td>Relacionado com a produção, distribuição e consumo de bens e serviços. A economia deve considerar a questão social e ambiental.</td>
+								 <td>Refere-se aos recursos naturais do planeta e a forma como são utilizados pela sociedade, comunidades ou empresas.</td>
+							 </tr>
+							     </tbody>
+						     
+						</table>
+
+                        <br></br>
+                        <hr size=9 color=greem windth=50% aling+center>
+                        <p align="center"><font size="7" color="black" face="arial black">PROGRAMAÇÃO WEB</font></p>
+                        <hr size="5" color="black" width=24%>
+						<center><img src="https://cdn.pixabay.com/photo/2020/05/31/19/53/light-bulb-5244001_960_720.jpg" height="35%" width="30%"></>
+                       
+                        <p align="center"><font size="7" color="black" face="arial black">ETEC VASCO ANTÔNIO VENCHIARUTTI</font></p>
+                      
+        </body>
+
+        <footer>
+		
+                        <p align="center"><font color="black" size="4" face="arial"> NOME: Pedro Henrique Melo E Silva</font></p> 
+						<p align="center"><font color="black" size="4" face="arial"> NOME: Carlos Eduardo</font></p>
+						<p align="center"><font color="black" size="4" face="arial"> NOME: </font></p>
+						<p align="center"><font color="black" size="4" face="arial"> NOME: Oscar Felipe</font></p>
+						<p align="center"><font color="black" size="4" face="arial"> NOME: Gabriel Henrique da Costa Sousa</font></p>
+						<br></br>
+			 <p align="center"><font size="6" color="blue" 5pt="arial"> 1°SÉRIE C
+			 <hr size="5" color="blue" width=17%>
+			 <hr size=9 color=green width=100% align+center>
+        </footer>
+
+</html>

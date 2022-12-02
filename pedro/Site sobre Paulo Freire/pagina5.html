@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="https://etevav.com.br/new1/"><img src="https://etevav.com.br/new1/wp-content/uploads/2020/12/cropped-exemplo_imagem3-2.png" alt="Logo da etecvav"></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html"><b>Home</b></a>    
+                </li>
+                <li>
+                    <a href="pagina2.html"><b>Página02</b></a>
+                </li>
+                <li>
+                    <a href="pagina3.html"><b>Página03</b></a>
+                </li>
+                <li>
+                    <a href="pagina4.html"><b>Página04</b></a>
+                </li>
+                <li>
+                    <a href="pagina6.html"><b>Créditos</b></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="questmain">
+        <h1>Quiz PF</h1>
+        <h2>1. Qual é o ano em que Paulo Freire nasceu? E qual ano ele morreu?</h2>
+        <p class="paragrafo">1. (1921-1997)</p>
+        <p class="paragrafo">2. (1950-1998)</p>
+        <p class="paragrafo">3. (1910-1985)</p>
+        <input type="number" name="txtvel" id="txtvel">
+        <input id="BotaoV" type="button" value="Verificar" onclick="question01()">
+        <div id="res">
+
+        </div>
+    </main>
+    <main class="questmain">
+        <h2 class="title2">2. Qual obra que tem como principal finalidade mostrar a alta capacidade daquelas pessoas recém-independentes?</h2>
+        <p class="paragrafo">1. Pedagogia do oprimido</p>
+        <p class="paragrafo">2. Cartas à Guiné-Bissau</p>
+        <p class="paragrafo">3. Pedagogia da autonomia</p>
+        <input type="number" name="txtvel02" id="txtvel02">
+        <input id="BotaoV" type="button" value="Verificar" onclick="question02()">
+        <div id="res02">
+
+        </div>
+    </main>
+    <main class="questmain">
+        <h2 class="title2">3. Qual foi o local onde o Paulo Freire foi homenageado com um estáua?</h2>
+        <p class="paragrafo">1. Moscou (Rússia)</p>
+        <p class="paragrafo">2. Kiev (Ucrânia)</p>
+        <p class="paragrafo">3. Efter Badet (Suécia)</p>
+        <input type="number" name="txtvel03" id="txtvel03">
+        <input id="BotaoV" type="button" value="Verificar" onclick="question03()">
+        <div id="res03">
+
+        </div>
+    </main>
+    <main class="questmain">
+        <h2 class="title2">4. Qual era o tipo de educação de Paulo Freire era contra?</h2>
+        <p class="paragrafo">1. Educação Bancária</p>
+        <p class="paragrafo">2. Educação formal</p>
+        <p class="paragrafo">3. Educação EAD</p>
+        <input type="number" name="txtvel04" id="txtvel04">
+        <input id="BotaoV" type="button" value="Verificar" onclick="question04()">
+        <div id="res04">
+
+        </div>
+    </main>
+    <p><b class="aviso"><em>Todas as respostas estão no conteúdo das páginas anteriores</em></b></p>
+
+    <script>
+    //Questionário
+
+    function question01() {
+        var txtv = window.document.querySelector('input#txtvel')
+        var res = window.document.querySelector('div#res')
+        var vel = Number(txtv.value)
+        res.innerHTML = `<p class="paragrafo">Sua resposta foi ${vel}</p>`
+        if (vel == 1) {
+            res.innerHTML += `<p class="paragrafo"><strong id="correto">Correto</strong></p>`
+        }
+        else{
+            res.innerHTML += `<p class="paragrafo"><strong id="errado">Errado</strong> (resposta correta é 1921)</p>`
+            setTimeout(function() {
+            location.reload();
+            }, 3000)
+        }
+    }
+
+    function question02() {
+        var txtv02 = window.document.querySelector('input#txtvel02')
+        var res02 = window.document.querySelector('div#res02')
+        var vel02 = Number(txtv02.value)
+        res02.innerHTML = `<p class="paragrafo">Sua resposta foi ${vel02}</p>`
+        if (vel02 == 2) {
+            res02.innerHTML += `<p class="paragrafo"><strong id="correto">Correto</strong></p>`
+        }
+        else{
+            res02.innerHTML += `<p class="paragrafo"><strong id="errado">Errado</strong> (resposta correta é 2. Cartas à Guiné-Bissau)</p>`
+            setTimeout(function() {
+            location.reload();
+            }, 3000)
+        }
+    }
+
+    function question03() {
+        var txtv03 = window.document.querySelector('input#txtvel03')
+        var res03 = window.document.querySelector('div#res03')
+        var vel03 = Number(txtv03.value)
+        res03.innerHTML = `<p class="paragrafo">Sua resposta foi ${vel03}</p>`
+        if (vel03 == 3) {
+            res03.innerHTML += `<p class="paragrafo"><strong id="correto">Correto</strong></p>`
+        }
+        else{
+            res03.innerHTML += `<p class="paragrafo"><strong id="errado">Errado</strong> (resposta correta é 3. Efter Badet (Suécia)</p>`
+            setTimeout(function() {
+            location.reload();
+            }, 3000)
+        }
+    }
+
+    function question04() {
+        var txtv04 = window.document.querySelector('input#txtvel04')
+        var res04 = window.document.querySelector('div#res04')
+        var vel04 = Number(txtv04.value)
+        res04.innerHTML = `<p class="paragrafo">Sua resposta foi ${vel04}</p>`
+        if (vel04 == 1) {
+            res04.innerHTML += `<p class="paragrafo"><strong id="correto">Correto</strong></p>`
+        }
+        else{
+            res04.innerHTML += `<p class="paragrafo"><strong id="errado">Errado</strong> (resposta correta é 1. Educação Bancária)</p>`
+            setTimeout(function() {
+            location.reload();
+            }, 3000)
+        }
+    }
+    </script>
+</body>
+<footer>
+    <h1 style= "text-align: right;"><a id="link-topo" href="#">&#9650;</a>
+</footer>
+</html>

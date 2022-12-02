@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'fonte';
+    src: url('KGRedHands.ttf') format('truetype'), url('KGRedHandsOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;font-family: 'fonte', Times, serif;font-size: 40px; color: rgb(39, 39, 39);
+}
+
+h2{
+    text-align: justify;
+    text-align: justify;font-family: 'fonte', Times, serif;font-size: 15px; color: rgb(39, 39, 39);
+    text-indent: 30px;
+}
+
+
+h3{
+    text-align: center;font-family: 'fonte', Times, serif;font-size: 20px; color: rgb(39, 39, 39);
+}
+
+h4{
+    text-align: center;font-family: 'fonte', Times, serif;font-size: 30px; color: rgb(39, 39, 39);
+}
+
+h5{
+    text-align: center;font-family: 'fonte', Times, serif;font-size: 10px; color: rgb(39, 39, 39);
+}
+
+h6{
+    text-align: center; font-family: 'fonte', Times, serif;font-size: 15px; color: rgb(39, 39, 39);
+}
+
+#Título01{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+}
+
+#Título02{
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+}
+
+#Título03{
+    background-color: rgba(42, 147, 165, 0);
+    padding: 20px;
+}
+
+#Título04{
+    background-color: coral;
+    padding: 20px;
+}
+
+#Título05{
+    background-color: aqua;
+    padding: 20px;
+    
+}
+
+#Título06:hover{
+    background-color: #ff6868;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+#Título06{
+    background-color: rgba(255, 127, 80, 0);
+}

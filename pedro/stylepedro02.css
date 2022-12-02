@@ -1,0 +1,628 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navbar*/
+
+.icon-desativado{
+    opacity: 0.7;
+}
+
+.icon-desativado:hover{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.icon05{
+    display: block;
+    width: 35px;
+    height: 35px;
+}
+
+b{
+    margin-left: 5px;
+}
+
+header{
+    z-index: 999;
+}
+
+.icon{
+    color: rgb(0, 0, 0);
+}
+
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 6vh;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
+}
+
+h1:hover{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 60px;
+    color: aliceblue;
+    cursor: default;
+}
+
+.titleh2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.100);
+    border: 2px solid rgba(255, 255, 255, 0.188);
+    width: 35vw;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding-top: 15px;
+}
+
+.titleh3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: block;
+    background: rgba(255, 255, 255, 0.100);
+    border: 2px solid rgba(255, 255, 255, 0.188);
+    width: 72vw;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.logo{
+    font-size: 0px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background: rgba(255, 255, 255, 0.100);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
+nav h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4vh;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
+}
+
+nav h1:hover{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 4vh;
+    color: aliceblue;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+header nav a img{
+    width: 80px;
+    height: 80px;
+}
+
+ul li a{
+    border-radius: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+ul.dropdown-menu.dropdown-menu-dark{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(255, 255, 255, 0.188);
+    backdrop-filter: blur(15px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.2s;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+li a.dropdown-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+li a.dropdown-item:active{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.288);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgb(255, 255, 255), inset 0 0 15px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a.nav-link.dropdown-toggle{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 5px;
+    padding-top: 10px;
+    margin-top: 5px;
+    transition: 0.2s;
+}
+
+a.nav-link.dropdown-toggle:hover{
+    background-color: transparent;
+    border: solid rgba(255, 255, 255, 0.39);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/*Conteudo*/
+
+div.texao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.text{
+    color: #fff;
+}
+
+section{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section:nth-of-type(1){
+    background-image: url(../imagens/img18.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100Vh;
+}
+
+section:nth-of-type(2){
+    width: 100%;
+    height: 25vh;
+    background-color: rgb(145, 145, 145);
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-of-type(3){
+    width: 100%;
+    height: 525vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section:nth-of-type(4){
+    background-color: rgb(0, 0, 0);
+    height: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.container01{
+    display: flex;
+    padding-top: 45vh;
+    margin-left: 10vw;
+}
+
+#linguagens{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 5vh;
+}
+
+
+div.container02{
+    padding-top: 0vh;
+    background-color: rgb(246, 251, 255);
+    width: 100vw;
+    height: 525vh;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 16px;
+    margin: 0px 20px;
+    color: rgb(0, 0, 0);
+    text-indent: 30px;
+}
+
+.list-group{
+    width: 12vw;
+    font-weight: 600;
+    border: 0;
+    visibility: hidden;
+}
+
+.list-group-item{
+    background-color: bisque;
+}
+
+.list-group h3{
+    font-size: 3vh;
+    text-align: center;
+}
+
+#title01{
+    background-color: rgb(145, 145, 145);
+    border: 0;
+}
+
+.list{
+    font-weight: 700;
+    font-size: 1.7vh;
+    border: 0;
+}
+
+.list:hover{
+    font-weight: 700;
+    font-size: 2vh;
+}
+
+.icon{
+    width: 9vw;
+    height: 9vh;
+    color: rgb(0, 0, 0);
+}
+
+.icon02{
+    width: 3vw;
+    height: 3vh;
+    color: #fff;
+}
+
+.icon03{
+    width: 3vw;
+    height: 3vh;
+    color: rgb(0, 0, 0);
+}
+
+li.content{
+    width: 15vw;
+}
+
+li{
+    list-style: none;
+}
+
+.container-icon{
+    background-color: rgba(0, 255, 255, 0);
+    width: 100px;
+    margin: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.btn{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+div.btn::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+div.btn:hover::after{
+    width: 100%;
+}
+
+/*Scroolbar*/
+
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: rgba(102, 38, 38, 0);
+}
+
+::-webkit-scrollbar-thumb{
+    width: 15px;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    width: 15px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 10px;
+    transition: 0.7s ease-in-out;
+}
+
+/*Carrossel*/
+
+.carousel-inner{
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.400);
+}
+
+div.controlador-carrossel{
+    width: 20vw;
+    height: 30vh;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+}
+
+/*coneudo 02*/
+
+#texto-html5{
+    margin: 100px 300px 0px 300px;
+    visibility: hidden;
+}
+
+.texto01{
+    margin-top: 3vh;
+    display: flex;
+    align-items: center;
+}
+
+.texto01 p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+h1.titulo{
+    text-align: center;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    margin-bottom: 0;
+    position: relative;
+    visibility: hidden;
+}
+
+h1.titulo:hover{
+    font-size: 35px;
+}
+
+#t1{
+    margin-top: 55px;
+}
+
+.paragrafo-final{
+    margin-bottom: 5vh;
+}
+
+.table{
+    background-color: rgb(255, 255, 255);
+    margin-top: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
+}
+
+.tabela{
+    padding: 0 5vw;
+    visibility: hidden;
+}
+
+.destaque{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 1vh;
+}
+
+.destaque02{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 3vh;
+}
+
+.list-group-item{
+    width: 80vw;
+}
+
+#fim{
+    color: rgb(255, 255, 255);
+    margin-top: 2vh;
+    font-size: 12px;
+}
+
+/*link topo*/
+
+#link-topo{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(175, 175, 175);
+    padding: 2px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+#link-topo:hover{
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+/*botão das referencias - modal*/
+
+a.btn.btn-primary p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a.btn.btn-primary{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: 50px;
+}
+
+a.btn.btn-primary::after{
+    content: " ";
+    margin-left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+a.btn.btn-primary:hover::after{
+    width: 100%;
+}
+
+a.btn.btn-primary:active{
+    background-color: black;
+}
+
+svg.seta{
+    font-size: 40px;
+}
+
+div.modal-body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-indent: 30px;
+    margin: 0 100px;
+}
+
+div.modal-body a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+div.modal-body a:hover{
+    color: rgba(0, 0, 255, 0.719);
+}
+
+h1.modal-title.fs-5{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin: 10px;
+}
+
+div.modal-content{
+    background: rgba(255, 255, 255, 0.719);
+    backdrop-filter: blur(20px);
+    border: rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    width: 100vw;
+    margin-left: -500px;
+    margin-right: -500px;
+}
+
+.modal .fade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn.btn-primary{
+    border-radius: 25%;
+    background-color: rgb(25, 25, 25);
+    border: 2px solid rgba(87, 52, 52, 0);
+    backdrop-filter: blur(15px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+button.btn.btn-primary:active{
+    border-radius: 25%;
+    background-color: rgba(25, 25, 25, 0);
+    border: 2px solid rgba(87, 52, 52, 0);
+    backdrop-filter: blur(15px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}

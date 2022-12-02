@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'font01';
+    src: url('fontes/KGRedHands.ttf') format('truetype'), url('fontes/KGRedHandsOutline.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font02';
+    src: url('fontes/OldLondon.ttf') format('truetype'), url('fontes/OldLondonAlternate.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font03';
+    src: url('fontes/varsity_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    margin: 50px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h4{
+    text-align: center;
+    margin: 20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Amarelo{
+    background-color: rgba(255, 251, 0, 0.418);
+    transition: all 0.25s ease-in-out;
+}
+
+.textAmarelo{
+    font-family: 'font01', Times, serif;
+    transition: all 0.25s ease-in-out;
+}
+
+.fontAmarelo{
+    color: rgb(165, 163, 69);
+    transition: all 0.25s ease-in-out;
+}
+
+.Verde{
+    background-color: rgb(0, 255, 85, 0.418);
+    transition: all 0.25s ease-in-out;
+}
+
+.textVerde{
+    font-family: 'font02', Times, serif;
+    transition: all 0.25s ease-in-out;
+}
+
+.fontVerde{
+    color: rgb(68, 177, 104);
+    transition: all 0.25s ease-in-out;
+}
+
+.Azul{
+    background-color: rgb(0, 247, 255, 0.418);
+    transition: all 0.25s ease-in-out;
+}
+
+.textAzul{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: all 0.25s ease-in-out;
+}
+
+.fontAzul{
+    color: rgb(58, 61, 201);
+    transition: all 0.25s ease-in-out;
+}
+
+.Vermelho{
+    background-color: rgba(255, 0, 0, 0.418);
+    transition: all 0.25s ease-in-out;
+}
+
+.textVermelho{
+    font-family: 'font03', Times, serif;
+    transition: all 0.25s ease-in-out;
+}
+
+.fontVermelho{
+    color: rgb(255, 0, 0);
+    transition: all 0.25s ease-in-out;
+}
+
+.Roxo{
+    background-color: rgba(81, 18, 100, 0.418);
+    transition: all 0.25s ease-in-out;
+}
+
+.textRoxo{
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.25s ease-in-out;
+}
+
+.fontRoxo{
+    color: rgb(212, 0, 255);
+    transition: all 0.25s ease-in-out;
+}
+
+button{
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+button:hover{
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 35px;
+    font-weight: 300;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+div.container{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 30px);
+    min-width: 90vw;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+    padding: 10px 10px 10px 10px;
+}
+
+div.container02{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 100px);
+    min-width: 90vw;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+    padding: 10px 50px 10px 10px;
+    margin-top: 15px;
+}
+
+div.container03{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, 150px);
+    min-width: 90vw;
+    text-align: center;
+    background-color: rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.459);
+    padding: 10px 10px 10px 10px;
+    margin-top: 50px;
+}

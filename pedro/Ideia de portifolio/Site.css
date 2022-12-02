@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    text-align: justify;
+    font-size: 25px;
+    text-indent: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgba(255, 140, 0, 0.541);
+}
+
+#imagem{
+    display: block;
+    height: 500px;
+}
