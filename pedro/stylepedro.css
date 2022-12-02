@@ -9,6 +9,10 @@
 
 /*Barra superior*/
 
+div#link-para-outras-paginas{
+    display: none;
+}
+
 .navbar.bg-light.fixed-top{
     display: none;
 }
@@ -1493,4 +1497,39 @@ div.formulario-para-entrar-em-contato h1:hover{
     }
 
     /*Navbar*/
+
+    div#link-para-outras-paginas{
+        display: flex;
+    }
+
+    div.btn{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 5px;
+        margin-bottom: 0;
+        position: relative;
+    }
+    
+    div.btn::after{
+        content: " ";
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    
+    div.btn:hover::after{
+        width: 100%;
+    }
+
+    hr.line05{
+        margin-top: 0px;
+        margin: 0;
+    } 
 }
