@@ -9,6 +9,10 @@
 
 /*Barra superior*/
 
+.navbar.bg-light.fixed-top{
+    display: none;
+}
+
 .icon-desativado{
     opacity: 0.7;
 }
@@ -160,7 +164,8 @@ nav{
 
 .nav-list li{
     letter-spacing: 3px;
-    margin-left: 32px;
+    margin: 0 auto;
+    padding: auto;
 }
 
 .mobile-menu{
@@ -208,7 +213,7 @@ a.nav-link.dropdown-toggle:hover{
 }
 
 ul.dropdown-menu.dropdown-menu-dark{
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.719);
     border: 2px solid rgba(255, 255, 255, 0.188);
     backdrop-filter: blur(15px);
     color: rgb(255, 255, 255);
@@ -217,7 +222,7 @@ ul.dropdown-menu.dropdown-menu-dark{
     border-radius: 20px;
     margin: 5px;
     padding: 5px;
-    width: 300px;
+    width: 200px;
 }
 
 li a.dropdown-item{
@@ -316,7 +321,7 @@ section:nth-of-type(2){
     height: 85vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(175, 175, 175);
+    background-color: rgb(231, 231, 231);
 }
 
 section:nth-of-type(3){
@@ -334,7 +339,7 @@ section:nth-of-type(4){
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(158, 158, 158);
+    background-color: rgb(231, 231, 231);
 }
 
 section:nth-of-type(5){
@@ -347,7 +352,7 @@ section:nth-of-type(5){
 
 section:nth-of-type(6){
     box-shadow: inset 0 0 10px rgb(0, 0, 0);
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(231, 231, 231);
     height: 90vh;
     display: flex;
     align-items: center;
@@ -366,7 +371,7 @@ section:nth-of-type(7){
 
 section:nth-of-type(8){
     box-shadow: inset 0 0 10px rgb(0, 0, 0);
-    background-color: rgb(202, 202, 202);
+    background-color: rgb(231, 231, 231);
     height: 80vh;
     display: flex;
     align-items: center;
@@ -1165,12 +1170,14 @@ div.formulario-para-entrar-em-contato h1:hover{
     margin-right: 5px;
 }
 
-/*Barra lateral*/
-
-
 /*Responsivo*/
 
-@media (max-width: 412px){
+@media (min-width: 320px) and (max-width: 480px){
+
+    .content{
+        display: none;
+    }
+
     .sobre-mim02{
         margin-left: 0px;
         margin-bottom: 2vh;
@@ -1241,7 +1248,7 @@ div.formulario-para-entrar-em-contato h1:hover{
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: rgb(175, 175, 175);
+        background-color: rgb(231, 231, 231);
     }
 
     /*4°Parte da página*/
@@ -1254,7 +1261,7 @@ div.formulario-para-entrar-em-contato h1:hover{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: rgb(158, 158, 158);
+        background-color: rgb(231, 231, 231);
     }
 
     div.card{
@@ -1294,6 +1301,28 @@ div.formulario-para-entrar-em-contato h1:hover{
 
     /*6° Parte da página*/
 
+    section:nth-of-type(6){
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+        background-color: rgb(231, 231, 231);
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .title04{
+        margin-bottom: 5vh;
+    }
+
+    .container03{
+        width: 100vw;
+    }
+
+    .container03 h3{
+        display: none;
+    }
+
     .container03 img{
         display: none;
     }
@@ -1328,15 +1357,12 @@ div.formulario-para-entrar-em-contato h1:hover{
         margin-top: 5px;
     }
 
-        div.texto-sobre-mim-final{
+    div.texto-sobre-mim-final{
         display: flex;
         background-color: rgb(255, 255, 255);
         border-radius: 20px;
-        width: 20vw;
-        padding-top: 10px;
-        padding-left: 10px;
-        margin-left: 600px;
-        margin-top: 15px;
+        width: 90vw;
+        margin: 3vh auto;
     }
 
     div.texto-sobre-mim-final:hover{
@@ -1346,7 +1372,7 @@ div.formulario-para-entrar-em-contato h1:hover{
         width: 20vw;
         padding-top: 10px;
         padding-left: 10px;
-        margin-left: 600px;
+        margin-left: 100px;
         margin-top: 15px;
         background-color: rgba(150, 150, 150, 0.171);
         transition: 0.2s;
@@ -1361,6 +1387,110 @@ div.formulario-para-entrar-em-contato h1:hover{
     }
     
     p#text-inicio02{
-        margin: 25px;
+        display: none;
     }
+
+    /*7° Parte da página*/
+
+    section:nth-of-type(7){
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.meus-conhecimentos{
+        background-color: rgba(250, 235, 215, 0);
+        height: 35vh;
+        width: 90vw;
+    }
+    
+    .meus-conhecimentos h1{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 5vh;
+    }
+    
+    .meus-conhecimentos h1:hover{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 45px;
+    }
+    
+    .meus-conhecimentos p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 1rem;
+    }
+    
+    .meus-conhecimentos-cards{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin: 1vw;
+        transition: 0.2s;
+    }
+    
+    .meus-conhecimentos-cards:hover{
+        background-color: rgb(185, 185, 185);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+        margin: 1vw;
+    }
+    
+    .meus-conhecimentos-cards svg{
+        display: block;
+        width: 45px;
+        height: 45px;
+    }
+
+    .texto-final-para-a-apresentacao-da-documentacao{
+        margin-top: 4vh;
+    }
+
+    .texto-final-para-a-apresentacao-da-documentacao{
+        font-size: 1rem;
+    }
+
+    /*8° Parte da página*/
+
+    section:nth-of-type(8){
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+        background-color: rgb(231, 231, 231);
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.formulario-para-entrar-em-contato{
+        background-color: rgb(255, 255, 255);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        height: 82vh;
+        width: 95vw;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    div.formulario-para-entrar-em-contato h1{
+        color: rgb(0, 0, 0);
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    
+    div.formulario-para-entrar-em-contato h1:hover{
+        color: rgb(0, 0, 0);
+    }
+
+    /*Navbar*/
 }
