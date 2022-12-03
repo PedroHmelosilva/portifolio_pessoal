@@ -1176,7 +1176,7 @@ div.formulario-para-entrar-em-contato h1:hover{
 
 /*Responsivo*/
 
-@media (min-width: 300px) and (max-width: 600px){
+@media (min-width: 250px) and (max-width: 600px){
 
     .content{
         display: none;
