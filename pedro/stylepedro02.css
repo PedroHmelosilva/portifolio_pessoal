@@ -640,7 +640,7 @@ button.btn.btn-primary:active{
     font-family: 'Ubuntu', sans-serif;
 }
 
-@media (min-width: 320px) and (max-width: 480px){
+@media (min-width: 300px) and (max-width: 600px){
     /*Navbar*/
 
     div#link-para-outras-paginas{
