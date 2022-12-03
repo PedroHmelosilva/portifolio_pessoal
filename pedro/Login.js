@@ -3,10 +3,10 @@ function logar(){
     var Login = document.getElementById('login').value;
     var Senha = document.getElementById('senha').value;
 
-    if(Login == "Etecbest" && Senha == "Lendasdovav"){
-        alert('Bem Vindo, Devs!');
+    if(Login == "Pedrohmelo" && Senha == "#Pedro.Site-login@22#"){
+        alert('Olá pedro, seja bem-vindo!');
 
-        location.href = "projeto.html";
+        location.href = "indexpedro.html";
 
     }else{
         alert('Erro!!!');
