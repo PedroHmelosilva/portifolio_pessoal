@@ -747,4 +747,8 @@ button.btn.btn-primary:active{
         margin-top: 0vh;
         display: flex;
     }
+
+    .botao-referencias{
+        display: none;
+    }
 }
