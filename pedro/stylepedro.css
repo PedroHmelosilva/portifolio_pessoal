@@ -7,6 +7,11 @@
     padding: 0;
 }
 
+html, body{
+    background-color: #eceff1;
+    transition: 0.3s;
+}
+
 /*Barra superior*/
 
 div#link-para-outras-paginas{
@@ -69,6 +74,19 @@ li{
     height: 3vh;
     color: #fff;
 }
+
+.moon{
+    width: 2vw;
+    height: 2vh;
+    color: #fff;
+}
+
+.sun{
+    width: 2vw;
+    height: 2vh;
+    color: #fff;
+}
+
 
 li.content{
     width: 15vw;
@@ -156,7 +174,7 @@ nav{
     position: fixed;
     width: 100%;
     top: 0%;
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(155, 155, 155, 0.719);
     backdrop-filter: blur(20px);
     z-index: 999;
 }
@@ -325,7 +343,6 @@ section:nth-of-type(2){
     height: 85vh;
     display: flex;
     flex-direction: column;
-    background-color: rgb(231, 231, 231);
 }
 
 section:nth-of-type(3){
@@ -343,7 +360,7 @@ section:nth-of-type(4){
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(231, 231, 231);
+    background-color: #eceff1;
 }
 
 section:nth-of-type(5){
@@ -356,7 +373,7 @@ section:nth-of-type(5){
 
 section:nth-of-type(6){
     box-shadow: inset 0 0 10px rgb(0, 0, 0);
-    background-color: rgb(231, 231, 231);
+    background-color: #eceff1;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -365,8 +382,7 @@ section:nth-of-type(6){
 }
 
 section:nth-of-type(7){
-    box-shadow: inset 0 0 10px rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
+    background-color: #303436;
     height: 55vh;
     display: flex;
     align-items: center;
@@ -375,7 +391,7 @@ section:nth-of-type(7){
 
 section:nth-of-type(8){
     box-shadow: inset 0 0 10px rgb(0, 0, 0);
-    background-color: rgb(231, 231, 231);
+    background-color: #eceff1;
     height: 80vh;
     display: flex;
     align-items: center;
@@ -608,7 +624,7 @@ h1.title04{
 }
 
 h1.title04:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-size: 55px;
 }
@@ -742,9 +758,25 @@ svg.bd-placeholder-img.bd-placeholder-img-lg.d-block.w-100{
 
 /*Carrossel-conteudo*/
 
+div.texto-sobre-mim-final svg{
+    color: #fff;
+}
+
+div.texto-sobre-mim-final svg:hover{
+    color: #fff;
+}
+
+div.texto-sobre-mim-final p{
+    color: #fff;
+}
+
+div.texto-sobre-mim-final p:hover{
+    color: #fff;
+}
+
 div.texto-sobre-mim-final{
     display: flex;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     border-radius: 20px;
     width: 20vw;
     padding-top: 10px;
@@ -755,14 +787,13 @@ div.texto-sobre-mim-final{
 
 div.texto-sobre-mim-final:hover{
     display: flex;
-    background-color: rgb(255, 255, 255);
     border-radius: 20px;
     width: 20vw;
     padding-top: 10px;
     padding-left: 10px;
     margin-left: 600px;
     margin-top: 15px;
-    background-color: rgba(150, 150, 150, 0.171);
+    background-color: rgb(0, 0, 0);
     transition: 0.2s;
     cursor: default;
 }
@@ -1126,7 +1157,7 @@ div.meus-conhecimentos{
 /*Formulário para entrar em contato*/
 
 div.formulario-para-entrar-em-contato{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(214, 214, 214);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     height: 50vh;
@@ -1172,6 +1203,234 @@ div.formulario-para-entrar-em-contato h1:hover{
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 5px;
+}
+
+/*Modo escuro*/
+
+input[type="checkbox"]{
+    display: none;
+}
+
+    /*Navbar*/
+
+.dark nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 8vh;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+    background-color: rgba(0, 0, 0, 0.719);
+    backdrop-filter: blur(20px);
+    z-index: 999;
+}
+
+    /*Section02*/
+
+.dark section:nth-of-type(2){
+    background-color: #202020;
+    transition: 0.3s;
+}
+
+.dark section:nth-of-type(2) h1{
+    color: #fff;
+    transition: 0.3s;
+}
+
+.dark div.container{
+    background-color: #303436;
+    transition: 0.3s;
+}
+
+.dark div.container p{
+    transition: 0.3s;
+    color: #fff;
+}
+
+.dark div.vr{
+    transition: 0.3s;
+    color: #fff;
+}
+
+    /*Section04*/
+
+.dark section:nth-of-type(4){
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #202020;
+}
+
+.dark div.card{
+    background-color: #5d6163;
+    color: #fff;
+}
+
+.dark a.btn.btn-primary02{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+    position: relative;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+.dark a.btn.btn-primary02::after{
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.dark a.btn.btn-primary02:hover::after{
+    width: 100%;
+}
+
+    /*Section06*/
+
+.dark section:nth-of-type(6){
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    background-color: #202020;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.dark .container03 img{
+    width: 400px;
+    height: 400px;
+    margin-top: 70px;
+    margin-right: 20px;
+    float: left;
+    box-shadow: 0 0 20px rgba(25, 25, 25, 0.315);
+    background-color: #303436;
+    backdrop-filter: blur(25px);
+}
+
+.dark .container03 img{
+    margin-top: 100px;
+    margin-right: 10px;
+    margin-left: 120px;
+    transition: 0.2s ease-in-out;
+}
+
+
+.dark .container03 img:hover{
+    margin-top: 75px;
+    width: 450px;
+    height: 450px;
+    margin-right: 10px;
+    margin-left: 100px;
+    transition: 0.2s ease-in-out;
+}
+
+.dark h1.title04{
+    color: #fff;
+}
+
+.dark div.texto-sobre-mim-final p{
+    color: #fff;
+}
+
+.dark div.texto-sobre-mim-final{
+    display: flex;
+    background-color: #303436;
+    border-radius: 20px;
+    width: 20vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+
+.dark div.texto-sobre-mim-final:hover{
+    display: flex;
+    background-color: #303436;
+    border-radius: 20px;
+    width: 20vw;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 600px;
+    margin-top: 15px;
+    transition: 0.2s;
+    cursor: default;
+}
+
+    /*Section07*/
+
+section:nth-of-type(7){
+    background-color: #202020;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /*Section08*/
+
+.dark section:nth-of-type(8){
+    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    background-color: #202020;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dark div.formulario-para-entrar-em-contato{
+    background-color: #303436;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    height: 50vh;
+    width: 95vw;
+    padding: 20px 20px 20px 20px;
+}
+
+.dark div.formulario-para-entrar-em-contato h1{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.dark div.formulario-para-entrar-em-contato h1:hover{
+    color: rgb(255, 255, 255);
+}
+
+.dark div.formulario-para-entrar-em-contato .palavras{
+    color: #fff;
+}
+
+/*Experiência de usuário*/
+
+svg.moon{
+    display: none;
+}
+
+.dark svg.moon{
+    display: block;
+}
+
+.dark svg.sun{
+    display: none;
 }
 
 /*Responsivo*/
@@ -1252,7 +1511,7 @@ div.formulario-para-entrar-em-contato h1:hover{
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background-color: rgb(231, 231, 231);
+        background-color: #eceff1;
     }
 
     /*4°Parte da página*/
@@ -1265,7 +1524,7 @@ div.formulario-para-entrar-em-contato h1:hover{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: rgb(231, 231, 231);
+        background-color: #eceff1;
     }
 
     div.card{
@@ -1307,7 +1566,7 @@ div.formulario-para-entrar-em-contato h1:hover{
 
     section:nth-of-type(6){
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
-        background-color: rgb(231, 231, 231);
+        background-color: #eceff1;
         height: 80vh;
         display: flex;
         align-items: center;
@@ -1320,7 +1579,7 @@ div.formulario-para-entrar-em-contato h1:hover{
     }
 
     .container03{
-        width: 100vw;
+        width: 100%;
     }
 
     .container03 h3{
@@ -1361,24 +1620,39 @@ div.formulario-para-entrar-em-contato h1:hover{
         margin-top: 5px;
     }
 
+    div.texto-sobre-mim-final svg{
+        color: #fff;
+    }
+    
+    div.texto-sobre-mim-final svg:hover{
+        color: #fff;
+    }
+    
+    div.texto-sobre-mim-final p{
+        color: #fff;
+    }
+    
+    div.texto-sobre-mim-final p:hover{
+        color: #fff;
+    }
+    
     div.texto-sobre-mim-final{
         display: flex;
-        background-color: rgb(255, 255, 255);
-        border-radius: 20px;
-        width: 90vw;
-        margin: 3vh auto;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0px;
+        width: 100%;
+        margin-left: 0px;
     }
-
+    
     div.texto-sobre-mim-final:hover{
         display: flex;
-        background-color: rgb(255, 255, 255);
-        border-radius: 20px;
-        width: 20vw;
+        border-radius: 0px;
+        width: 100%;
         padding-top: 10px;
         padding-left: 10px;
-        margin-left: 100px;
+        margin-left: 0px;
         margin-top: 15px;
-        background-color: rgba(150, 150, 150, 0.171);
+        background-color: rgb(0, 0, 0);
         transition: 0.2s;
         cursor: default;
     }
@@ -1398,7 +1672,7 @@ div.formulario-para-entrar-em-contato h1:hover{
 
     section:nth-of-type(7){
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
-        background-color: rgb(0, 0, 0);
+        background-color: #202020;
         height: 70vh;
         display: flex;
         align-items: center;
@@ -1467,7 +1741,7 @@ div.formulario-para-entrar-em-contato h1:hover{
 
     section:nth-of-type(8){
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
-        background-color: rgb(231, 231, 231);
+        background-color: #eceff1;
         height: 100vh;
         display: flex;
         align-items: center;
@@ -1476,7 +1750,7 @@ div.formulario-para-entrar-em-contato h1:hover{
     }
 
     div.formulario-para-entrar-em-contato{
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(214, 214, 214);
         backdrop-filter: blur(10px);
         border-radius: 20px;
         height: 82vh;
