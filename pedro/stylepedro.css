@@ -1230,6 +1230,10 @@ input[type="checkbox"]{
     /*Section02*/
 
 .dark section:nth-of-type(2){
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: #202020;
     transition: 0.3s;
 }
@@ -1437,6 +1441,8 @@ svg.moon{
 
 @media (min-width: 250px) and (max-width: 600px){
 
+    
+
     .content{
         display: none;
     }
@@ -1496,9 +1502,7 @@ svg.moon{
     .container img{
         display: none;
     }
-    
-    .cont
-    
+
     .container p{
         font-size: 17px;
         color: rgb(0, 0, 0);
