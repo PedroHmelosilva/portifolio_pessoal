@@ -10,6 +10,7 @@
 html, body{
     background-color: #eceff1;
     transition: 0.3s;
+    width: 100%;
 }
 
 /*Barra superior*/
@@ -1231,7 +1232,7 @@ input[type="checkbox"]{
 
 .dark section:nth-of-type(2){
     box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     background-color: #202020;
@@ -1425,6 +1426,12 @@ section:nth-of-type(7){
 
 /*Experiência de usuário*/
 
+div#modo-escuro-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 svg.moon{
     display: none;
 }
@@ -1439,9 +1446,11 @@ svg.moon{
 
 /*Responsivo*/
 
-@media (min-width: 250px) and (max-width: 600px){
+@media (min-width: 320px) and (max-width: 600px){
 
-    
+    #modo-escuro-btn{
+        display: none;
+    }
 
     .content{
         display: none;
@@ -1757,7 +1766,7 @@ svg.moon{
         background-color: rgb(214, 214, 214);
         backdrop-filter: blur(10px);
         border-radius: 20px;
-        height: 82vh;
+        height: 85vh;
         width: 95vw;
         padding: 10px 10px 10px 10px;
     }
@@ -1815,4 +1824,44 @@ svg.moon{
         margin-top: 0px;
         margin: 0;
     } 
+}
+
+@media (min-width: 250px) and (max-width: 320px){
+
+    div.formulario-para-entrar-em-contato{
+        background-color: rgb(214, 214, 214);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        height: 90vh;
+        width: 95vw;
+        padding: 10px 10px 10px 10px;
+    }
+
+    section:nth-of-type(2){
+        box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+        height: 120vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #eceff1;
+    }
+
+    div.container{
+        height: 100vh;
+        background-color: transparent;
+        border: 0;
+        border-radius: 20px;
+        box-shadow: 0 0 0px rgba(0,0,0,0);
+    }
+
+    section:nth-of-type(4){
+        box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+        height: 480vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #eceff1;
+    }
+
+    h1.title04{
+        font-size: 3rem;
+    }
 }
