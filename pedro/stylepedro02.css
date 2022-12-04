@@ -504,7 +504,7 @@ h1.titulo:hover{
 
 #link-topo{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
     background-color: rgb(175, 175, 175);
     padding: 2px;
     position: fixed;
@@ -519,7 +519,7 @@ h1.titulo:hover{
 }
 
 #link-topo:hover{
-    background-color: #ffffff;
+    background-color: #000000;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px black;
@@ -533,6 +533,7 @@ svg.icon{
     display: block;
     width: 35px;
     height: 35px;
+    color: #fff;
 }
 
 /*botão das referencias - modal*/
