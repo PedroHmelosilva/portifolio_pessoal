@@ -80,6 +80,7 @@ li{
     width: 2vw;
     height: 2vh;
     color: #fff;
+    margin-top: 1vh;
 }
 
 .sun{
@@ -1426,10 +1427,51 @@ section:nth-of-type(7){
 
 /*Experiência de usuário*/
 
+.sun{
+    margin-top: 1vh;
+}
+
 div#modo-escuro-btn{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 5vh;
+}
+
+div#modo-escuro-btn svg{
+    cursor: pointer;
+    width: 100vw;
+    height: 3vh;
+}
+
+div#modo-escuro-btn{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1px;
+    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#modo-escuro-btn::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+div#modo-escuro-btn:hover::after{
+    width: 0%;
 }
 
 svg.moon{
@@ -1448,7 +1490,7 @@ svg.moon{
 
 @media (min-width: 320px) and (max-width: 600px){
 
-    #modo-escuro-btn{
+    div#modo-escuro-btn{
         display: none;
     }
 
