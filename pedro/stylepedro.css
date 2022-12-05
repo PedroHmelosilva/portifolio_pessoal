@@ -1227,6 +1227,7 @@ input[type="checkbox"]{
     background-color: rgba(0, 0, 0, 0.719);
     backdrop-filter: blur(20px);
     z-index: 999;
+    transition: 0.3s;
 }
 
     /*Section02*/
@@ -1270,11 +1271,13 @@ input[type="checkbox"]{
     justify-content: center;
     flex-direction: column;
     background-color: #202020;
+    transition: 0.3s;
 }
 
 .dark div.card{
     background-color: #5d6163;
     color: #fff;
+    transition: 0.3s;
 }
 
 .dark a.btn.btn-primary02{
@@ -1289,6 +1292,7 @@ input[type="checkbox"]{
     position: relative;
     margin-left: 10px;
     margin-top: 15px;
+    transition: 0.3s;
 }
 
 .dark a.btn.btn-primary02::after{
@@ -1317,6 +1321,7 @@ input[type="checkbox"]{
     justify-content: center;
     flex-direction: column;
     color: #fff;
+    transition: 0.3s;
 }
 
 .dark .container03 img{
@@ -1328,6 +1333,7 @@ input[type="checkbox"]{
     box-shadow: 0 0 20px rgba(25, 25, 25, 0.315);
     background-color: #303436;
     backdrop-filter: blur(25px);
+    transition: 0.3s;
 }
 
 .dark .container03 img{
@@ -1349,10 +1355,12 @@ input[type="checkbox"]{
 
 .dark h1.title04{
     color: #fff;
+    transition: 0.3s;
 }
 
 .dark div.texto-sobre-mim-final p{
     color: #fff;
+    transition: 0.3s;
 }
 
 .dark div.texto-sobre-mim-final{
@@ -1364,6 +1372,7 @@ input[type="checkbox"]{
     padding-left: 10px;
     margin-left: 600px;
     margin-top: 15px;
+    transition: 0.3s;
 }
 
 .dark div.texto-sobre-mim-final:hover{
@@ -1377,6 +1386,7 @@ input[type="checkbox"]{
     margin-top: 15px;
     transition: 0.2s;
     cursor: default;
+    transition: 0.3s;
 }
 
     /*Section07*/
@@ -1387,6 +1397,7 @@ section:nth-of-type(7){
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
 }
 
     /*Section08*/
@@ -1399,6 +1410,7 @@ section:nth-of-type(7){
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: 0.3s;
 }
 
 .dark div.formulario-para-entrar-em-contato{
@@ -1408,6 +1420,7 @@ section:nth-of-type(7){
     height: 50vh;
     width: 95vw;
     padding: 20px 20px 20px 20px;
+    transition: 0.3s;
 }
 
 .dark div.formulario-para-entrar-em-contato h1{
@@ -1415,14 +1428,17 @@ section:nth-of-type(7){
     font-size: 45px;
     text-align: center;
     margin-bottom: 5vh;
+    transition: 0.3s;
 }
 
 .dark div.formulario-para-entrar-em-contato h1:hover{
     color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 .dark div.formulario-para-entrar-em-contato .palavras{
     color: #fff;
+    transition: 0.3s;
 }
 
 /*Experiência de usuário*/

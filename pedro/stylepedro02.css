@@ -115,7 +115,7 @@ nav{
     position: fixed;
     width: 100%;
     top: 0%;
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(155, 155, 155, 0.719);
     backdrop-filter: blur(20px);
     z-index: 999;
 }
@@ -274,10 +274,11 @@ div.container01{
 
 
 div.container02{
-    padding-top: 0vh;
-    background-color: rgb(246, 251, 255);
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    background-color: #fff;
     width: 100%;
-    height: 525vh;
+    height: 100%;
 }
 
 p{
@@ -427,7 +428,7 @@ div.controlador-carrossel{
 /*coneudo 02*/
 
 #texto-html5{
-    margin: 100px 300px 0px 300px;
+    margin: 100px 500px 0px 500px;
     visibility: hidden;
 }
 
@@ -577,6 +578,11 @@ a.btn.btn-primary:active{
 
 svg.seta{
     font-size: 40px;
+    color: #fff;
+}
+
+svg#seta-link{
+    color: #fff;
 }
 
 div.modal-body{
@@ -640,6 +646,205 @@ button.btn.btn-primary:active{
     text-decoration: none;
     font-family: 'Ubuntu', sans-serif;
 }
+
+.container02 svg{
+    color: rgb(0, 0, 0);
+}
+
+/*Experiência de usuário*/
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.sun{
+    margin-top: 1vh;
+}
+
+div#modo-escuro-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+}
+
+div#modo-escuro-btn svg{
+    cursor: pointer;
+    width: 100vw;
+    height: 3vh;
+}
+
+div#modo-escuro-btn{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1px;
+    margin-bottom: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#modo-escuro-btn::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+div#modo-escuro-btn:hover::after{
+    width: 0%;
+}
+
+svg.moon{
+    display: none;
+}
+
+.dark svg.moon{
+    display: block;
+}
+
+.dark svg.sun{
+    display: none;
+}
+
+/*Modo escuro*/
+
+    /*Navbar*/
+
+    .dark nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 8vh;
+        position: fixed;
+        width: 100%;
+        top: 0%;
+        background-color: rgba(0, 0, 0, 0.719);
+        backdrop-filter: blur(20px);
+        z-index: 999;
+        transition: 0.3s;
+    }
+
+    /*Section02*/
+    
+    .dark section:nth-of-type(2){
+        width: 100%;
+        height: 25vh;
+        background-color: #303436;
+        box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+
+    /*Conteudo*/
+    .dark body{
+        background-color: #303436;
+    }
+
+    .dark .table{
+        background-color: #303436;
+        color: #fff;
+        margin-top: 25px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.200);
+    }
+
+    .dark .table svg{
+        color: #fff;
+    }
+
+    .dark .container02{
+        background-color: #202020;
+        color: #fff;
+    }
+
+    .dark .container02 svg{
+        color: #fff;
+    }
+
+    .dark .container02 p{
+        color: #fff;
+    }
+
+    .dark .container02 h1{
+        color: #fff;
+    }
+
+    .dark .container02 a{
+        color: #fff;
+    }
+
+    .dark div.modal-content{
+        background: #303436;
+        backdrop-filter: blur(20px);
+        border: rgb(0, 0, 0);
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+        width: 100vw;
+        margin-left: -500px;
+        margin-right: -500px;
+    }
+
+    .dark div.modal-content{
+        color: #fff;
+    }
+
+    .dark div.modal-body p{
+        color: #fff;
+    }
+
+    .dark div.modal-body strong{
+        color: #fff;
+    }
+
+    /*outros*/
+
+    .dark a.btn.btn-primary p{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .dark a.btn.btn-primary{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        margin-bottom: 0;
+        position: relative;
+        margin-left: 50px;
+    }
+    
+    .dark a.btn.btn-primary::after{
+        content: " ";
+        margin-left: 0px;
+        width: 0%;
+        height: 2px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .dark a.btn.btn-primary:hover::after{
+        width: 100%;
+    }
+    
+    .dark a.btn.btn-primary:active{
+        background-color: rgb(255, 255, 255);
+    }
 
 @media (min-width: 250px) and (max-width: 600px){
     /*Navbar*/
@@ -732,6 +937,10 @@ button.btn.btn-primary:active{
     }
 
     /*3° Parte da Página*/
+
+    body{
+        background-color: #fff;
+    }
 
     #texto-html5{
         margin: 0px 0px 0px 0px;
