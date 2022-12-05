@@ -7,6 +7,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html, body{
+    height: 100vh;
+}
+
 .container{
     background: url(../imagens/background-login.png) no-repeat;
     background-size: cover;
