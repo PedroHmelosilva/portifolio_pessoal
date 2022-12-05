@@ -563,6 +563,10 @@ svg.icon{
 
     /*Navbar*/
 
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 250px;
+    }
+
     li.content{
         display: none;
     }

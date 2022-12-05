@@ -924,6 +924,10 @@ svg.moon{
 
 @media (min-width: 250px) and (max-width: 600px){
 
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 250px;
+    }
+
     div.container01{
         display: flex;
         padding-top: 50vh;

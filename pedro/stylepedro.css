@@ -1418,6 +1418,10 @@ svg.moon{
 
 @media (min-width: 320px) and (max-width: 600px){
 
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 250px;
+    }
+
     li.content{
         display: none;
     }
