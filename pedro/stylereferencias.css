@@ -334,7 +334,7 @@ section:nth-of-type(2){
 
 .br-space{
     width: 100%;
-    height: 5vh;
+    height: 2vh;
     background-color: #ffffff;
 }
 
@@ -372,7 +372,21 @@ section:nth-of-type(2){
 
 /*Grid*/
 
+#text-fim{
+    background-color: #e7e7e7;
+    text-align: center;
+    font-weight: 700;
+}
+
+#text-sec{
+    height: 0;
+}
+
 #pagina01-mobile{
+    display: none;
+}
+
+#pagina02-mobile{
     display: none;
 }
 
@@ -495,6 +509,54 @@ svg.moon{
     background-color: #303030;
     transition: 0.3s;
 }
+
+.dark .br-space{
+    background-color: #303030;
+    transition: 0.3s;
+}
+
+.dark #text-fim{
+    background-color: #000;
+    color: #fff;
+}
+
+/*link topo*/
+
+#link-topo{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(175, 175, 175);
+    padding: 2px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+}
+
+#link-topo:hover{
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    margin-top:10px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+svg.icon{
+    display: block;
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
+
 /*Resoponsivo*/
 
 @media (min-width: 250px) and (max-width: 600px){
@@ -577,7 +639,19 @@ svg.moon{
         display: none;
     }
 
+    #pagina02{
+        display: none;
+    }
+
     #pagina01-mobile{
         display: block;
+    }
+
+    #pagina02-mobile{
+        display: block;
+    }
+
+    #text-fim{
+        display: none;
     }
 }
