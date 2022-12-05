@@ -80,13 +80,14 @@ li{
     width: 2vw;
     height: 2vh;
     color: #fff;
-    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 .sun{
     width: 2vw;
     height: 2vh;
     color: #fff;
+    margin-bottom: 1vh;
 }
 
 
@@ -1156,6 +1157,10 @@ div.meus-conhecimentos{
     margin-top: 4vh;
 }
 
+hr#hr-para-mobile{
+    display: none;
+}
+
 /*Formulário para entrar em contato*/
 
 div.formulario-para-entrar-em-contato{
@@ -1216,27 +1221,13 @@ input[type="checkbox"]{
     /*Navbar*/
 
 .dark nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    height: 8vh;
-    position: fixed;
-    width: 100%;
-    top: 0%;
     background-color: rgba(0, 0, 0, 0.719);
-    backdrop-filter: blur(20px);
-    z-index: 999;
     transition: 0.3s;
 }
 
     /*Section02*/
 
 .dark section:nth-of-type(2){
-    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
     background-color: #202020;
     transition: 0.3s;
 }
@@ -1264,12 +1255,6 @@ input[type="checkbox"]{
     /*Section04*/
 
 .dark section:nth-of-type(4){
-    box-shadow: inset 0 0 10px rgb(0, 0, 0);
-    height: 160vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     background-color: #202020;
     transition: 0.3s;
 }
@@ -1281,28 +1266,12 @@ input[type="checkbox"]{
 }
 
 .dark a.btn.btn-primary02{
-    background-color: transparent;
-    border: 0;
-    padding: 0;
-    text-decoration: none;
     color: #fff;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 30px;
-    margin-bottom: 0;
-    position: relative;
-    margin-left: 10px;
-    margin-top: 15px;
     transition: 0.3s;
 }
 
 .dark a.btn.btn-primary02::after{
-    content: " ";
-    width: 0%;
-    height: 4px;
     background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     transition: 0.3s ease-in-out;
 }
 
@@ -1313,43 +1282,22 @@ input[type="checkbox"]{
     /*Section06*/
 
 .dark section:nth-of-type(6){
-    box-shadow: inset 0 0 10px rgb(0, 0, 0);
     background-color: #202020;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     color: #fff;
     transition: 0.3s;
 }
 
 .dark .container03 img{
-    width: 400px;
-    height: 400px;
-    margin-top: 70px;
-    margin-right: 20px;
-    float: left;
-    box-shadow: 0 0 20px rgba(25, 25, 25, 0.315);
     background-color: #303436;
-    backdrop-filter: blur(25px);
     transition: 0.3s;
 }
 
 .dark .container03 img{
-    margin-top: 100px;
-    margin-right: 10px;
-    margin-left: 120px;
     transition: 0.2s ease-in-out;
 }
 
 
 .dark .container03 img:hover{
-    margin-top: 75px;
-    width: 450px;
-    height: 450px;
-    margin-right: 10px;
-    margin-left: 100px;
     transition: 0.2s ease-in-out;
 }
 
@@ -1364,28 +1312,12 @@ input[type="checkbox"]{
 }
 
 .dark div.texto-sobre-mim-final{
-    display: flex;
     background-color: #303436;
-    border-radius: 20px;
-    width: 20vw;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 600px;
-    margin-top: 15px;
     transition: 0.3s;
 }
 
 .dark div.texto-sobre-mim-final:hover{
-    display: flex;
     background-color: #303436;
-    border-radius: 20px;
-    width: 20vw;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 600px;
-    margin-top: 15px;
-    transition: 0.2s;
-    cursor: default;
     transition: 0.3s;
 }
 
@@ -1393,41 +1325,23 @@ input[type="checkbox"]{
 
 section:nth-of-type(7){
     background-color: #202020;
-    height: 55vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     transition: 0.3s;
 }
 
     /*Section08*/
 
 .dark section:nth-of-type(8){
-    box-shadow: inset 0 0 10px rgb(0, 0, 0);
     background-color: #202020;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
     transition: 0.3s;
 }
 
 .dark div.formulario-para-entrar-em-contato{
     background-color: #303436;
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    height: 50vh;
-    width: 95vw;
-    padding: 20px 20px 20px 20px;
     transition: 0.3s;
 }
 
 .dark div.formulario-para-entrar-em-contato h1{
     color: rgb(255, 255, 255);
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 5vh;
     transition: 0.3s;
 }
 
@@ -1442,10 +1356,6 @@ section:nth-of-type(7){
 }
 
 /*Experiência de usuário*/
-
-.sun{
-    margin-top: 1vh;
-}
 
 div#modo-escuro-btn{
     display: flex;
@@ -1506,8 +1416,9 @@ svg.moon{
 
 @media (min-width: 320px) and (max-width: 600px){
 
-    div#modo-escuro-btn{
-        display: none;
+    hr#hr-para-mobile{
+        display: flex;
+        margin-bottom: 1vh;
     }
 
     .content{
@@ -1609,6 +1520,7 @@ svg.moon{
         display: block;
         width: 35px;
         height: 35px;
+        margin: 0px;
     }
     
     svg.icon02{
@@ -1623,6 +1535,13 @@ svg.moon{
         width: 30px;
         height: 30px;
         margin-top: 4px;
+    }
+
+    svg.mobile{
+        display: block;
+        width: 35px;
+        height: 35px;
+        margin: 10px; 
     }
     
     img.card-img-top{
@@ -1742,7 +1661,6 @@ svg.moon{
     /*7° Parte da página*/
 
     section:nth-of-type(7){
-        box-shadow: inset 0 0 10px rgb(0, 0, 0);
         background-color: #202020;
         height: 70vh;
         display: flex;
@@ -1885,6 +1803,10 @@ svg.moon{
 }
 
 @media (min-width: 250px) and (max-width: 320px){
+
+    hr#hr-para-mobile{
+        display: flex;
+    }
 
     div.formulario-para-entrar-em-contato{
         background-color: rgb(214, 214, 214);
