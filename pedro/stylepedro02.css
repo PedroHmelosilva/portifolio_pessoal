@@ -9,17 +9,6 @@
 
 /*Navbar*/
 
-.sobre-mim02{
-    margin-left: 0px;
-    font-size: 75px;
-    color: rgb(102, 102, 102);
-    cursor: default;
-}
-
-.sobre-mim02:hover{
-    font-size: 77px;
-}
-
 li{
     margin: 0;
 }
@@ -229,6 +218,75 @@ li a.dropdown-item:active{
 }
 
 /*Conteudo*/
+
+div.botao-referencias a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+div.botao-referencias a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+div.botao-referencias a:hover::after{
+    width: 100%;
+}
+
+.dark div.botao-referencias a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.dark div.botao-referencias a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.dark div.botao-referencias a:hover::after{
+    width: 100%;
+}
+
+.sobre-mim01{
+    margin: 0;
+}
+
+.sobre-mim02{
+    margin-left: 0px;
+    font-size: 75px;
+    color: rgb(102, 102, 102);
+    cursor: default;
+}
+
+.sobre-mim02:hover{
+    font-size: 77px;
+}
 
 h2.destaque-resoponsivo strong{
     display: none;
