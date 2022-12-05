@@ -9,6 +9,17 @@
 
 /*Navbar*/
 
+.sobre-mim02{
+    margin-left: 0px;
+    font-size: 75px;
+    color: rgb(102, 102, 102);
+    cursor: default;
+}
+
+.sobre-mim02:hover{
+    font-size: 77px;
+}
+
 li{
     margin: 0;
 }
@@ -261,8 +272,8 @@ section:nth-of-type(2){
 
 div.container01{
     display: flex;
-    padding-top: 45vh;
-    margin-left: 10vw;
+    padding-top: 50vh;
+    margin-left: 100px;
 }
 
 #linguagens{
@@ -531,6 +542,7 @@ hr#hr-para-mobile{
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 5px;
+    color: #fff;
 }
 
 svg.icon{
@@ -851,6 +863,26 @@ svg.moon{
     }
 
 @media (min-width: 250px) and (max-width: 600px){
+
+    div.container01{
+        display: flex;
+        padding-top: 50vh;
+        margin-left: 10px;
+    }
+
+    .sobre-mim02{
+        margin-left: 0px;
+        margin-bottom: 2vh;
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.692);
+        cursor: default;
+    }
+
+    .sobre-mim02:hover{
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.692);
+    }
+
     /*Navbar*/
 
     hr#hr-para-mobile{
