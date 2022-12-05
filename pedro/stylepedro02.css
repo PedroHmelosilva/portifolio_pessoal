@@ -416,7 +416,9 @@ svg.icon04{
 }
 
 li.content{
-    width: 16vw;
+    display: block;
+    position: absolute;
+    margin: auto;
 }
 
 li{

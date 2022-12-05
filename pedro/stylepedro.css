@@ -92,7 +92,9 @@ li{
 
 
 li.content{
-    width: 16vw;
+    display: block;
+    position: absolute;
+    margin: auto;
 }
 
 li{
@@ -1415,6 +1417,10 @@ svg.moon{
 /*Responsivo*/
 
 @media (min-width: 320px) and (max-width: 600px){
+
+    li.content{
+        display: none;
+    }
 
     hr#hr-para-mobile{
         display: flex;
