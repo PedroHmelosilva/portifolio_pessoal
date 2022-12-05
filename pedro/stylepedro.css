@@ -722,7 +722,7 @@ iframe{
 /*Scroolbar*/
 
 ::-webkit-scrollbar{
-    width: 15px;
+    width: 10px;
     background-color: rgba(102, 38, 38, 0);
 }
 
