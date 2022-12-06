@@ -15,6 +15,10 @@ sr.reveal('#texto-html5, .tabela',{
     duration: 2000
 });
 
+sr.reveal('.container01', {
+    duration: 3000
+});
+
 /*Modo escuro*/ 
 
 const changeThemeBtn = document.querySelector("#change-theme")

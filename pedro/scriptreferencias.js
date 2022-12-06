@@ -25,3 +25,22 @@ changeThemeBtn.addEventListener("change", function(){
         localStorage.setItem("dark", 1);
     }
 });
+
+/*Animações ao scroll*/ 
+
+window.sr = ScrollReveal({reset: true});
+
+/*Titulos*/ 
+
+sr.reveal('.center', {
+    rotate: {x: 0, y:80, z:0},
+    duration: 3000
+});
+
+sr.reveal('.container01', {
+    duration: 3000
+});
+
+sr.reveal('#parte1', {
+    duration: 3000
+});
