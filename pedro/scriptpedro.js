@@ -42,6 +42,11 @@ sr.reveal('.card', {
 
 /*textos*/
 
+sr.reveal('.texto-sobre-programacao-texto-celular', {
+    rotate: {x: 0, y:0, z:0},
+    duration: 3000
+});
+
 sr.reveal('.texto-sobre-mim-final', {
     rotate: {x: 0, y:0, z:0},
     duration: 3000

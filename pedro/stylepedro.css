@@ -398,6 +398,16 @@ section:nth-of-type(8){
 
 /*conteudo*/
 
+
+
+#bnt-mais-computador{
+    margin-top: 5vh;
+}
+
+.texto-sobre-programacao-texto-celular{
+    display: none;
+}
+
 #criacao-e-afins{
     margin: 2%;
 }
@@ -430,6 +440,7 @@ div.container-relative img{
 
 .texto-sobre-programacao-texto01 p{
     color: #000000;
+    text-indent: 30px;
 }
 
 .dark .texto-sobre-programacao-texto01 p{
@@ -525,13 +536,28 @@ img.container03{
     transition: 0.2s ease-in-out;
 }
 
+#minhas-informações-celular{
+    display: flex;
+}
 
-.container03 img:hover{
-    width: 450px;
-    height: 450px;
-    margin-right: 10px;
-    margin-left: 100px;
-    transition: 0.2s ease-in-out;
+#cards-mobile{
+    display: none;
+}
+
+div.texto-sobre-mim-final-celular{
+    background-color: #202020;
+    color: #fff;
+    width: 100%;
+    left: 0%;
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.dark div.texto-sobre-mim-final-celular{
+    background-color: #fff;
+    color: #000000;
 }
 
 .container03 .texto-sobre-mim-final{
@@ -666,6 +692,7 @@ p{
     font-family: 'Ubuntu', sans-serif;
 }
 /*Efeiro de rolagem*/
+
 .sobre-mim01, .sobre-mim02{
     visibility: hidden;
 }
@@ -686,6 +713,7 @@ p{
 .sobre-mim02:hover{
     font-size: 77px;
 }
+
 /*----------------------------------*/
 iframe{
     background-color: rgb(255, 255, 255);
@@ -799,28 +827,64 @@ div.texto-sobre-mim-final p:hover{
     color: #fff;
 }
 
-div.texto-sobre-mim-final{
+#alinhamento-minhas-informações-computador{
     display: flex;
-    background-color: rgb(0, 0, 0);
-    border-radius: 20px;
-    width: 20vw;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 600px;
-    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
-div.texto-sobre-mim-final:hover{
-    display: flex;
+#minhas-informações-computador{
+    background-color: rgb(255, 255, 255,0);
+    width: 90%;
+    height: 45vh;
+    position: relative;
+    padding: 5px;
+}
+
+div#box-1{
+    position: absolute;
+    left: 2%;
+    bottom: 80%;
+}
+
+div#box-2{
+    position: absolute;
+    left: 2%;
+    bottom: 60%;
+}
+
+div#box-3{
+    position: absolute;
+    left: 2%;
+    bottom: 40%;
+}
+
+div#box-4{
+    position: absolute;
+    left: 2%;
+    bottom: 20%;
+}
+
+div#box-5{
+    position: absolute;
+    left: 2%;
+    bottom: 0;
+}
+
+div#box-6-github{
+    position: absolute;
+    left: 40%;
+    top: 2%;
+}
+
+div.texto-sobre-mim-final{
+    left: 0%;
+    position: absolute;
+    background-color: #303436;
     border-radius: 20px;
     width: 20vw;
     padding-top: 10px;
     padding-left: 10px;
-    margin-left: 600px;
-    margin-top: 15px;
-    background-color: rgb(0, 0, 0);
-    transition: 0.2s;
-    cursor: default;
 }
 
 p.texto-sobre-mim-final{
@@ -828,6 +892,20 @@ p.texto-sobre-mim-final{
     margin-bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+div.texto-sobre-mim-final-celular p{
+    margin-left: -10px;
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div.texto-sobre-mim-final-celular svg{
+    margin-bottom: 0;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 /*Modal*/
@@ -1231,6 +1309,7 @@ div.formulario-para-entrar-em-contato h1:hover{
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 5px;
+    z-index: 100;
 }
 
 #link-topo:hover{
@@ -1339,17 +1418,22 @@ input[type="checkbox"]{
 }
 
 .dark div.texto-sobre-mim-final p{
-    color: #fff;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.dark div.texto-sobre-mim-final svg{
+    color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .dark div.texto-sobre-mim-final{
-    background-color: #303436;
+    background-color: #ffffff;
     transition: 0.3s;
 }
 
 .dark div.texto-sobre-mim-final:hover{
-    background-color: #303436;
+    background-color: #ffffff;
     transition: 0.3s;
 }
 
@@ -1446,7 +1530,39 @@ svg.moon{
 
 /*Responsivo*/
 
+#sobre-mim-mobile-afins{
+    display: none;
+}
+
+#minhas-informações-celular{
+    display: none;
+}
+
+#minhas-informações-computador{
+    display: block;
+}
+
 @media (min-width: 320px) and (max-width: 600px){
+
+    #sobre-mim-mobile-afins{
+        display: block;
+    }
+
+    #cards-mobile{
+        display: block;
+    }
+
+    #minhas-informações-computador{
+        display: none;
+    }
+
+    #minhas-informações-celular{
+        display: flex;
+    }    
+
+    div.container-relative img{
+        display: none;
+    }
 
     div#mobile{
         display: block;
@@ -1494,14 +1610,42 @@ svg.moon{
 
     /*2°Parte da página*/
 
+    .texto-sobre-programacao-texto-celular{
+        display: block;
+        text-indent: 30px;
+        margin: 2%;
+    }
+
+    .dark .texto-sobre-programacao-texto-celular{
+        color: #fff;
+    }
+
+    .texto-sobre-programacao-texto01{
+        display: none;
+    }
+
+    .texto-sobre-programacao-texto01{
+        width: 100%;
+        text-indent: 30px;
+        position: absolute;
+        top: 0;
+    }
+
+    .row{
+        margin: 5px;
+    }
+
     div.container{
-        height: 85vh;
         background-color: transparent;
         border: 0;
-        border-radius: 20px;
         box-shadow: 0 0 0px rgba(0,0,0,0);
     }
 
+    div.container-relative{
+        background-color: transparent;
+        border: 0;
+        box-shadow: 0 0 0px rgba(0,0,0,0);
+    }
     
     .container h3:nth-of-type(1){
         color: rgb(0, 0, 0);
@@ -1538,30 +1682,27 @@ svg.moon{
 
     section:nth-of-type(2){
         box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
         background-color: #eceff1;
+        position: relative;
     }
 
     /*4°Parte da página*/
 
+    #bnt-mais{
+        margin-top: 2vh;
+    }
+
     section:nth-of-type(4){
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
-        padding: 0 auto;
-        height: 450vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
         background-color: #eceff1;
     }
 
     div.card{
-        width: 90%;
+        width: 100%;
         background-color: rgb(214, 214, 214);
         backdrop-filter: blur(10px);
-        box-shadow: 0 0 25px rgba(25, 25, 25, 0.315);
+        box-shadow: 0 0 5px rgba(25, 25, 25, 0.315);
     }
     
     svg.icon{
@@ -1605,11 +1746,6 @@ svg.moon{
     section:nth-of-type(6){
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
         background-color: #eceff1;
-        height: 80vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
     }
 
     .title04{
@@ -1667,11 +1803,11 @@ svg.moon{
     }
     
     div.texto-sobre-mim-final p{
-        color: #fff;
+        color: rgb(255, 255, 255);
     }
     
-    div.texto-sobre-mim-final p:hover{
-        color: #fff;
+    .dark div.texto-sobre-mim-final p{
+        color: rgb(0, 0, 0);
     }
     
     div.texto-sobre-mim-final{
@@ -1680,19 +1816,6 @@ svg.moon{
         border-radius: 0px;
         width: 100%;
         margin-left: 0px;
-    }
-    
-    div.texto-sobre-mim-final:hover{
-        display: flex;
-        border-radius: 0px;
-        width: 100%;
-        padding-top: 10px;
-        padding-left: 10px;
-        margin-left: 0px;
-        margin-top: 15px;
-        background-color: rgb(0, 0, 0);
-        transition: 0.2s;
-        cursor: default;
     }
 
     p.texto-sobre-mim-final{
@@ -1706,11 +1829,14 @@ svg.moon{
         display: none;
     }
 
+    p#text-inicio-celular{
+        display: flex;
+    }
+
     /*7° Parte da página*/
 
     section:nth-of-type(7){
         background-color: #202020;
-        height: 70vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1718,7 +1844,6 @@ svg.moon{
 
     div.meus-conhecimentos{
         background-color: rgba(250, 235, 215, 0);
-        height: 35vh;
         width: 90vw;
     }
     
@@ -1779,7 +1904,6 @@ svg.moon{
     section:nth-of-type(8){
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
         background-color: #eceff1;
-        height: 100vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1852,6 +1976,14 @@ svg.moon{
 
 @media (min-width: 250px) and (max-width: 320px){
 
+    div#mobile{
+        display: block;
+    }
+    
+    div#desktop{
+        display: none;
+    }
+
     hr#hr-para-mobile{
         display: flex;
     }
@@ -1874,7 +2006,6 @@ svg.moon{
     }
 
     div.container{
-        height: 100vh;
         background-color: transparent;
         border: 0;
         border-radius: 20px;
