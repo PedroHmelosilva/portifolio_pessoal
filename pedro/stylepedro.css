@@ -614,6 +614,21 @@ p#text-inicio02{
     visibility: hidden;
 }
 
+#imagem-creditos{
+    width: 350px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #eceff1;
+    box-shadow: 2px 2px 5px #b8b8b8;
+    padding: 0;
+    margin: 0;
+}
+
+.dark #imagem-creditos{
+    background-color: #303436;
+    box-shadow: 2px 2px 5px #000000;
+}
+
 img{
     width: 350px;
     height: 550px;
@@ -878,18 +893,15 @@ div#box-6-github{
 }
 
 div.texto-sobre-mim-final{
-    left: 0%;
-    position: absolute;
     background-color: #303436;
     border-radius: 20px;
-    width: 20vw;
+    width: 100%;
+    height: 15%;
     padding-top: 10px;
     padding-left: 10px;
 }
 
 p.texto-sobre-mim-final{
-    margin-left: -10px;
-    margin-bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
@@ -902,7 +914,6 @@ div.texto-sobre-mim-final-celular p{
 }
 
 div.texto-sobre-mim-final-celular svg{
-    margin-bottom: 0;
     font-size: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
