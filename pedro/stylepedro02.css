@@ -497,9 +497,12 @@ div.controlador-carrossel{
 
 /*coneudo 02*/
 
-#texto-html5{
-    margin: 100px 500px 0px 500px;
-    visibility: hidden;
+#tablet{
+    display: none;
+}
+
+#celular{
+    display: none;
 }
 
 .texto01{
@@ -922,6 +925,114 @@ svg.moon{
         background-color: rgb(255, 255, 255);
     }
 
+@media (min-width: 320px) and (max-width: 750px){
+    #celular{
+        display: flex;
+    }
+
+    #tablet{
+        display: none;
+    }
+
+    #computador{
+        display: none;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1000px){
+    #tablet{
+        display: flex;
+    }
+
+    #computador{
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1200px){
+            /*Navbar*/
+
+            div#link-para-outras-paginas{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            div.btn{
+                background-color: transparent;
+                border: 0;
+                padding: 0;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-size: 1px;
+                margin-bottom: 0;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            div.btn::after{
+                content: " ";
+                width: 0%;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                transition: 0.5s ease-in-out;
+            }
+            
+            div.btn:hover::after{
+                width: 100%;
+            }
+        
+            hr.line05{
+                margin-top: 0px;
+                margin: 0;
+            } 
+    
+            ul.dropdown-menu.dropdown-menu-dark{
+                width: 250px;
+            }
+        
+            li.content{
+                display: none;
+            }
+        
+            hr#hr-para-mobile{
+                display: flex;
+                margin-bottom: 1vh;
+            }
+        
+            .content{
+                display: none;
+            }
+        
+            .sobre-mim02{
+                margin-left: 0px;
+                margin-bottom: 2vh;
+                font-size: 45px;
+                color: rgb(102, 102, 102);
+                cursor: default;
+            }
+            
+            .sobre-mim02:hover{
+                font-size: 77px;
+            }
+        
+            .inicio{
+                margin-left: 10px;
+                padding-top: 40vh;
+                color: rgb(255, 255, 255);
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+        div.controlador-carrossel{
+            display: none;
+        }
+}
+
 @media (min-width: 250px) and (max-width: 600px){
 
     ul.dropdown-menu.dropdown-menu-dark{
@@ -1007,10 +1118,6 @@ svg.moon{
     }
 
     .carousel-inner{
-        display: none;
-    }
-    
-    div.controlador-carrossel{
         display: none;
     }
 
