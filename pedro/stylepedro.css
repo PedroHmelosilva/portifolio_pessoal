@@ -398,8 +398,6 @@ section:nth-of-type(8){
 
 /*conteudo*/
 
-
-
 #bnt-mais-computador{
     margin-top: 5vh;
 }
@@ -426,6 +424,7 @@ div.container-relative img{
 
 .dark div.container-relative{
     background-color: #303436;
+    transition: 0.3s;
 }
 
 .texto-sobre-programacao-texto01{
@@ -445,10 +444,12 @@ div.container-relative img{
 
 .dark .texto-sobre-programacao-texto01 p{
     color: #ffffff;
+    transition: 0.3s;
 }
 
 .dark .texto-sobre-programacao-texto01 h3{
     color: #ffffff;
+    transition: 0.3s;
 }
 
 #fim{
@@ -465,6 +466,8 @@ div.container{
 
 div#mobile{
     display: none;
+    margin: 0;
+    padding: 0;
 }
 
 div#desktop{
@@ -558,6 +561,7 @@ div.texto-sobre-mim-final-celular{
 .dark div.texto-sobre-mim-final-celular{
     background-color: #fff;
     color: #000000;
+    transition: 0.3s;
 }
 
 .container03 .texto-sobre-mim-final{
@@ -627,6 +631,7 @@ p#text-inicio02{
 .dark #imagem-creditos{
     background-color: #303436;
     box-shadow: 2px 2px 5px #000000;
+    transition: 0.3s;
 }
 
 img{
@@ -897,8 +902,7 @@ div.texto-sobre-mim-final{
     border-radius: 20px;
     width: 100%;
     height: 15%;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px;
 }
 
 p.texto-sobre-mim-final{
@@ -1106,6 +1110,7 @@ div.modal-content{
 
 div.card{
     width: 100%;
+    margin-top: 3%;
     background-color: rgba(214, 214, 214, 0.4);
     backdrop-filter: blur(50px);
     box-shadow: 0 0 5px rgba(25, 25, 25, 0.315);
@@ -1287,7 +1292,6 @@ div.formulario-para-entrar-em-contato{
     background-color: rgb(214, 214, 214);
     backdrop-filter: blur(10px);
     border-radius: 20px;
-    height: 50vh;
     width: 95vw;
     padding: 20px 20px 20px 20px;
     margin: 1.5%;
@@ -1553,8 +1557,216 @@ svg.moon{
     display: block;
 }
 
-@media (min-width: 320px) and (max-width: 600px){
+#title-computador{
+    display: block;
+}
 
+div#coluna-celular{
+    display: none;
+}
+
+.row{
+    background-color: transparent;
+}
+
+hr.line06{
+    background-color: transparent;
+    color: #000000;
+}
+
+.dark hr.line06{
+    color: #fff;
+    transition: 0.3s;
+}
+
+@media (min-width: 320px) and (max-width: 1200px){
+
+    div.container-creditos{
+        background-color: #202020;
+    }
+
+    p.text-creditos{
+        color: #fff;
+    }
+
+    .dark div#coluna-celular{
+        background-color: #202020;
+        transition: 0.3s;
+    }
+    
+    div#coluna-celular{
+        display: block;
+        box-shadow: inset 0 0 10px rgb(0, 0, 0);
+        background-color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+
+    div#coluna-celular svg{
+        margin: 0;
+        padding: 0;
+    }
+
+    .dark div#coluna-celular svg{
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
+    div#coluna-celular p{
+        margin: 0;
+        padding: 0;
+        color: #ffffff;
+    }
+
+    .dark div#coluna-celular p{
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+
+    div#coluna-celular .title04{
+        margin: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+
+    section:nth-of-type(6){
+        display: none;
+    }
+
+        /*Navbar*/
+
+        div#link-para-outras-paginas{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        div.btn{
+            background-color: transparent;
+            border: 0;
+            padding: 0;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1px;
+            margin-bottom: 0;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        div.btn::after{
+            content: " ";
+            width: 0%;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: 0.5s ease-in-out;
+        }
+        
+        div.btn:hover::after{
+            width: 100%;
+        }
+    
+        hr.line05{
+            margin-top: 0px;
+            margin: 0;
+        } 
+
+        ul.dropdown-menu.dropdown-menu-dark{
+            width: 250px;
+        }
+    
+        li.content{
+            display: none;
+        }
+    
+        hr#hr-para-mobile{
+            display: flex;
+            margin-bottom: 1vh;
+        }
+    
+        .content{
+            display: none;
+        }
+    
+        .sobre-mim02{
+            margin-left: 0px;
+            margin-bottom: 2vh;
+            font-size: 45px;
+            color: rgb(102, 102, 102);
+            cursor: default;
+        }
+        
+        .sobre-mim02:hover{
+            font-size: 77px;
+        }
+    
+        .inicio{
+            margin-left: 10px;
+            padding-top: 40vh;
+            color: rgb(255, 255, 255);
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        
+    .row{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .container03 .texto-sobre-mim-final{
+        margin-bottom: 20px;
+        font-size: 17px;
+        color: rgb(0, 0, 0);
+        text-indent: 30px;
+        text-align: justify;
+        display: flex;
+        align-items: flex-start;
+        visibility: hidden;
+    }
+    
+    .container03 .texto-sobre-mim-final p{
+        margin-top: 5px;
+    }
+
+    div.texto-sobre-mim-final svg{
+        color: #fff;
+    }
+    
+    div.texto-sobre-mim-final svg:hover{
+        color: #fff;
+    }
+    
+    div.texto-sobre-mim-final p{
+        color: rgb(255, 255, 255);
+    }
+    
+    .dark div.texto-sobre-mim-final p{
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+    }
+    
+    div.texto-sobre-mim-final{
+        display: flex;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0px;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    p.texto-sobre-mim-final{
+        margin-left: 0px;
+        margin-bottom: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1000px){
+    
     #sobre-mim-mobile-afins{
         display: block;
     }
@@ -1582,54 +1794,30 @@ svg.moon{
     div#desktop{
         display: none;
     }
+}
 
-    ul.dropdown-menu.dropdown-menu-dark{
-        width: 250px;
-    }
-
-    li.content{
-        display: none;
-    }
-
-    hr#hr-para-mobile{
-        display: flex;
-        margin-bottom: 1vh;
-    }
-
-    .content{
-        display: none;
-    }
-
-    .sobre-mim02{
-        margin-left: 0px;
-        margin-bottom: 2vh;
-        font-size: 45px;
-        color: rgb(102, 102, 102);
-        cursor: default;
-    }
-    
-    .sobre-mim02:hover{
-        font-size: 77px;
-    }
-
-    .inicio{
-        margin-left: 10px;
-        padding-top: 40vh;
-        color: rgb(255, 255, 255);
-        font-family: 'Ubuntu', sans-serif;
-    }
-
-    /*2°Parte da página*/
+@media (min-width: 320px) and (max-width: 1400px){
+    /*2°Parte*/
 
     .texto-sobre-programacao-texto-celular{
         display: block;
         text-indent: 30px;
         margin: 2%;
     }
-
+    
+    div.container-relative{
+        display: none;
+    }
+    
     .dark .texto-sobre-programacao-texto-celular{
         color: #fff;
+        transition: 0.3s;
     }
+}
+
+@media (min-width: 320px) and (max-width: 600px){
+
+    /*2°Parte da página*/
 
     .texto-sobre-programacao-texto01{
         display: none;
@@ -1640,10 +1828,6 @@ svg.moon{
         text-indent: 30px;
         position: absolute;
         top: 0;
-    }
-
-    .row{
-        margin: 5px;
     }
 
     div.container{
@@ -1702,6 +1886,7 @@ svg.moon{
 
     #bnt-mais{
         margin-top: 2vh;
+        margin-bottom: 2vh;
     }
 
     section:nth-of-type(4){
@@ -1754,9 +1939,14 @@ svg.moon{
 
     /*6° Parte da página*/
 
-    section:nth-of-type(6){
+    div#coluna-celular{
+        display: block;
         box-shadow: inset 0 0 10px rgb(0, 0, 0);
         background-color: #eceff1;
+    }
+
+    section:nth-of-type(6){
+        display: none;
     }
 
     .title04{
@@ -1819,6 +2009,7 @@ svg.moon{
     
     .dark div.texto-sobre-mim-final p{
         color: rgb(0, 0, 0);
+        transition: 0.3s;
     }
     
     div.texto-sobre-mim-final{
@@ -1925,7 +2116,6 @@ svg.moon{
         background-color: rgb(214, 214, 214);
         backdrop-filter: blur(10px);
         border-radius: 20px;
-        height: 85vh;
         width: 95vw;
         padding: 10px 10px 10px 10px;
     }
@@ -1941,48 +2131,6 @@ svg.moon{
     div.formulario-para-entrar-em-contato h1:hover{
         color: rgb(0, 0, 0);
     }
-
-    /*Navbar*/
-
-    div#link-para-outras-paginas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    div.btn{
-        background-color: transparent;
-        border: 0;
-        padding: 0;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 1px;
-        margin-bottom: 0;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    div.btn::after{
-        content: " ";
-        width: 0%;
-        height: 2px;
-        background-color: #fff;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: 0.5s ease-in-out;
-    }
-    
-    div.btn:hover::after{
-        width: 100%;
-    }
-
-    hr.line05{
-        margin-top: 0px;
-        margin: 0;
-    } 
 }
 
 @media (min-width: 250px) and (max-width: 320px){
@@ -2003,7 +2151,6 @@ svg.moon{
         background-color: rgb(214, 214, 214);
         backdrop-filter: blur(10px);
         border-radius: 20px;
-        height: 90vh;
         width: 95vw;
         padding: 10px 10px 10px 10px;
     }
