@@ -1579,6 +1579,10 @@ hr.line06{
     transition: 0.3s;
 }
 
+div#tablet-cards{
+    display: none;
+}
+
 @media (min-width: 320px) and (max-width: 1200px){
 
     div.container-creditos{
@@ -1765,6 +1769,12 @@ hr.line06{
     }
 }
 
+@media (min-width: 600px) and (max-width: 1000px){
+    div#tablet-cards{
+        display: block;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 1000px){
     
     #sobre-mim-mobile-afins{
@@ -1772,7 +1782,7 @@ hr.line06{
     }
 
     #cards-mobile{
-        display: block;
+        display: none;
     }
 
     #minhas-informações-computador{
@@ -1788,7 +1798,7 @@ hr.line06{
     }
 
     div#mobile{
-        display: block;
+        display: none;
     }
     
     div#desktop{
@@ -1816,6 +1826,14 @@ hr.line06{
 }
 
 @media (min-width: 320px) and (max-width: 600px){
+
+    div#mobile{
+        display: block;
+    }
+
+    #cards-mobile{
+        display: none;
+    }
 
     /*2°Parte da página*/
 
