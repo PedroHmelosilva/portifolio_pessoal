@@ -10,7 +10,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="form" align="center">
+        <div id="apresentacao-login">
+            <h1>Olá mundo</h1>
+            <h2>Seja bem vindo ao meu portifólio :)</h2>
+        </div>
+        <div class="form">
             <div id="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle icon" viewBox="0 0 16 16">
                     <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
@@ -18,19 +22,21 @@
                 </svg>
             </div>
             <br>
-            <h1>Seja Bem Vindo!</h1>
-            <br>
-            <div>
-                <input type="text" placeholder="Login" id="login">
-            </div>
-            <br>
-            <br>
+            <div class="content">
+                <h1>Faça o login</h1>
+                <br>
                 <div>
-                <input type="password" placeholder="Senha" id="senha">
+                    <input type="text" placeholder="Login" id="login">
                 </div>
                 <br>
                 <br>
-            <button id="entrar-na-pagina" input type="submit" onclick="logar(); return false">Entrar</button>
+                    <div>
+                    <input type="password" placeholder="Senha" id="senha">
+                    </div>
+                    <br>
+                    <br>
+                <button id="entrar-na-pagina" input type="submit" onclick="logar(); return false"><p>Entrar</p></button>
+            </div>
         </div>
     </div>
 </body>

@@ -12,9 +12,11 @@ html, body{
 }
 
 .container{
-    background: url(../imagens/background-login.png) no-repeat;
+    background: url(../imagens/img11.jpg) no-repeat;
     background-size: cover;
-    height: 100vh;
+    position: relative;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,8 +24,8 @@ html, body{
 }
 
 .form{
-    width: 410px;
-    height: 500px;
+    width: 25vw;
+    height: 50%;
     background: transparent;
     backdrop-filter: blur(25px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
@@ -55,6 +57,9 @@ input{
 }
 
 #logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -67,7 +72,23 @@ input{
 h1{
     font-family: 'Roboto', sans-serif;
     margin: 14px;
-    color: #ffffff;
+    color: #eceff1;
+    font-size: 50px;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    margin: 14px;
+    color: #bdbdbd;
+    font-size: 25px; 
+}
+
+button p{
+    color: #fff;
+}
+
+button p:hover{
+    color: rgb(0, 0, 0);
 }
 
 button{
@@ -77,12 +98,12 @@ button{
     border-radius: 40px;
     border: none;
     outline: none;
-    background: linear-gradient(400deg, #182653, #25215D);
+    background: linear-gradient(400deg, #202020, #303436);
     transition: 2s;
 }
 
 button:hover{
-    background: linear-gradient(400deg, #182653,#4EFCFF,#25215D);
+    background: linear-gradient(400deg, #202020,#dddd,#202020);
 }
 
 svg.icon{
@@ -94,3 +115,172 @@ svg.icon{
 #entrar-na-pagina{
     cursor: pointer;
 }
+
+.form{
+    position: absolute;
+    right: 20%;
+    transform: translateX(-0%);
+    text-align: center;
+}
+
+.content{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content h1{
+    font-size: 40px;
+}
+
+#apresentacao-login{
+    position: absolute;
+    left: 15%;
+    transform: translateX(-0%);
+}
+
+@media (min-width: 1000px) and (max-width: 1400px){
+    #apresentacao-login{
+        position: absolute;
+        left: 5%;
+        transform: translateX(-0%);
+    }
+
+    .form{
+        width: 25vw;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px){
+    #apresentacao-login h2{
+        display: none;
+    }
+
+    .form{
+        width: 40vw;
+        left: 45%;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 899px){
+    #apresentacao-login h2{
+        display: none;
+    }
+
+    #apresentacao-login{
+        position: absolute;
+        left: 1%;
+        transform: translateX(-0%);
+    }
+
+    .form{
+        right: 10%;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 850px){
+    #apresentacao-login h2{
+        display: none;
+    }
+
+    #apresentacao-login{
+        position: absolute;
+        left: 1%;
+        transform: translateX(-0%);
+    }
+
+    .form{
+        right: 5%;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 750px){
+    #apresentacao-login h2{
+        display: none;
+    }
+
+    #apresentacao-login{
+        position: absolute;
+        left: 1%;
+        transform: translateX(-0%);
+    }
+
+    .form{
+        right: 1%;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px){
+    #apresentacao-login h1, h2{
+        display: none;
+    }
+
+    .form{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 500px){
+    #apresentacao-login h1, h2{
+        display: none;
+    }
+
+    .form{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 420px){
+    #apresentacao-login h1, h2{
+        display: none;
+    }
+
+    .form{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 360px){
+    #apresentacao-login h1, h2{
+        display: none;
+    }
+
+    .form{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+}
+
+@media (max-width: 320px){
+    #apresentacao-login h1, h2{
+        display: none;
+    }
+
+    .form{
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100vw;
+    }
+}
+
+/*final 320px*/
+
+/*
+paleta
+303436
+
+202020
+
+000000
+*/
