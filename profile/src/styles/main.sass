@@ -1,0 +1,23 @@
+@use 'variables'
+    
+*
+    padding: 0
+    margin: 0
+    font-family: variables.$font-stack
+    box-sizing: border-box
+
+body
+    background-color: variables.$body-bg-color
+
+a, svg
+    transition: .4s
+
+::-webkit-scrollbar
+    width: 10px
+    background-color: rgba(155, 155, 155, 0)
+
+::-webkit-scrollbar-thumb
+    width: 15px
+    background-color: rgb(83, 83, 83)
+    border-radius: 10px
+    transition: 0.7s ease-in-out
