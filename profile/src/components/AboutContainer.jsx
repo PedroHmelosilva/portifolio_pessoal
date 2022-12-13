@@ -1,12 +1,13 @@
 const AboutContainer = () => {
-    return <section className="about-container">
+    return <section className="gradient-border">
         <h2>Sobre</h2>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia eius culpa beatae quam itaque ea, vitae dolorum asperiores id unde nobis porro nemo laborum labore quidem maxime quae atque.
+            Olá, meu nome é Pedro Henrique Melo e Silva, Sou estudante da escola técnica Etec Vasco Antônio Venchiarutti, e estou fazendo o curso de Desenvolvimento de Sistemas integrado ao ensino médio.
         </p>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, similique quisquam excepturi temporibus ducimus sunt possimus nostrum obcaecati, quis alias nam illo, aut dolore voluptatibus natus modi maxime est nulla.
+            Tenho apenas 15 anos porém já estou começando a desenvolver o meu portifólio, isso para juntar tudo que eu já fiz e inserir em apenas uma página.
         </p>
+        <br />
     </section>;{ 
     }
 };
