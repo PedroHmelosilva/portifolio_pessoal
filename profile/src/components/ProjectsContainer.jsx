@@ -4,7 +4,7 @@ const ProjectsContainer = () => {
         <p>
             No link abaixo está disponível o meu Github, para que você tenha acesso aos códigos dos meus projetos.
         </p>
-        <a href="https://github.com/PedroHmelosilva" className="btn">
+        <a href="https://github.com/PedroHmelosilva?tab=repositories" className="btn">
             Ver projetos no meu Github
         </a>
     </section>;{ 
