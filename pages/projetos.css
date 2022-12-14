@@ -7,26 +7,13 @@
     padding: 0;
 }
 
-/*Navbar*/
-
-svg.icon04{
-    display: block;
-    width: 35px;
-    height: 35px;
-    margin: 10px;
+html, body{
+    background-color: #eceff1;
+    transition: 0.3s;
+    width: 100%;
 }
 
-hr#hr-para-mobile{
-    display: none;
-}
-
-.dark body{
-    background-color: black;
-}
-
-li{
-    margin: 0;
-}
+/*Barra superior*/
 
 div#link-para-outras-paginas{
     display: none;
@@ -45,10 +32,73 @@ div#link-para-outras-paginas{
     transition: 0.5s ease-in-out;
 }
 
-.icon05{
+#title-inicio{
+    font-size: 4vh;
+}
+
+#title-inicio:hover{
+    font-size: 4vh;
+}
+
+div.btn{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+div.btn::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+div.btn:hover::after{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.icon04{
+    width: 3vw;
+    height: 3vh;
+    color: #fff;
+}
+
+.moon{
+    width: 2vw;
+    height: 2vh;
+    color: #fff;
+    margin-bottom: 1vh;
+}
+
+.sun{
+    width: 2vw;
+    height: 2vh;
+    color: #fff;
+    margin-bottom: 1vh;
+}
+
+
+li.content{
     display: block;
-    width: 35px;
-    height: 35px;
+    position: absolute;
+    margin: auto;
+}
+
+li{
+    list-style: none;
 }
 
 b{
@@ -59,10 +109,6 @@ header{
     z-index: 999;
 }
 
-.icon{
-    color: rgb(0, 0, 0);
-}
-
 a{
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -71,7 +117,7 @@ a{
 
 h1{
     font-family: 'Ubuntu', sans-serif;
-    font-size: 6vh;
+    font-size: 55px;
     color: aliceblue;
     transition: 0.2s ease-in-out;
 }
@@ -80,7 +126,6 @@ h1:hover{
     font-family: 'Ubuntu', sans-serif;
     font-size: 60px;
     color: aliceblue;
-    cursor: default;
 }
 
 .titleh2{
@@ -121,6 +166,10 @@ h1:hover{
     letter-spacing: 4px;
 }
 
+.logo:hover{
+    opacity: 0.7;
+}
+
 nav{
     display: flex;
     justify-content: space-around;
@@ -135,20 +184,6 @@ nav{
     z-index: 999;
 }
 
-nav h1{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 4vh;
-    color: aliceblue;
-    transition: 0.2s ease-in-out;
-}
-
-nav h1:hover{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 4vh;
-    color: aliceblue;
-    transition: 0.2s ease-in-out;
-}
-
 .nav-list{
     list-style: none;
     display: flex;
@@ -156,6 +191,8 @@ nav h1:hover{
 
 .nav-list li{
     letter-spacing: 3px;
+    margin: 0 auto;
+    padding: auto;
 }
 
 .mobile-menu{
@@ -210,7 +247,7 @@ ul.dropdown-menu.dropdown-menu-dark{
     text-decoration: none;
     transition: 0.2s;
     border-radius: 20px;
-    margin: 5px;
+    margin: 0px;
     padding: 5px;
     width: 200px;
 }
@@ -232,121 +269,80 @@ li a.dropdown-item:active{
     text-decoration: none;
 }
 
-/*Conteudo*/
-
-div.container01{
-    display: block;
-    position: absolute;
-    top: 50vh;
-    right: 10vh;
-}
-
-li.content{
-    display: block;
-    position: absolute;
-    margin: auto;
-}
-
-div.btn{
+#home{
     background-color: transparent;
-    border: 0;
-    padding: 0;
-    text-decoration: none;
+    backdrop-filter: blur(15px);
     color: rgb(255, 255, 255);
-    font-size: 30px;
-    margin-bottom: 0;
-    position: relative;
-    margin-right: 0px;
 }
 
-div.btn::after{
-    content: " ";
-    width: 0%;
-    height: 2px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transition: 0.5s ease-in-out;
+#home:hover{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgb(255, 255, 255), inset 0 0 15px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
 
-div.btn:hover::after{
-    width: 100%;
+#facebook{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-.icon02{
-    width: 3vw;
-    height: 3vh;
-    color: #fff;
+#facebook:hover{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgb(255, 255, 255), inset 0 0 15px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-li{
-    list-style: none;
+#instagram{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-/*Scroolbar*/
-
-::-webkit-scrollbar{
-    width: 10px;
-    background-color: rgba(102, 38, 38, 0);
+#instagram:hover{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgb(255, 255, 255), inset 0 0 15px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-::-webkit-scrollbar-thumb{
-    width: 15px;
-    background-color: rgb(59, 59, 59);
-    border-radius: 10px;
-    transition: 0.7s ease-in-out;
+#referencias{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-::-webkit-scrollbar-thumb:hover{
-    width: 15px;
-    background-color: rgb(185, 185, 185);
-    border-radius: 10px;
-    transition: 0.7s ease-in-out;
+#referencias:hover{
+    background-color: transparent;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 15px rgb(255, 255, 255), inset 0 0 15px rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 
-/*Sections*/
+/*Paralexe*/
 
 section{
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 section:nth-of-type(1){
-    background-image: url(../imagens/img19.jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100Vh;
+    background-image: url(../imagens/img20.jpg);
+    height: 100vh;
 }
 
-section:nth-of-type(2){
-    width: 100%;
-    height: 20vh;
-    background-color: #e7e7e7;
-    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.br-space{
-    width: 100%;
-    height: 2vh;
-    background-color: #ffffff;
-}
-
-.space{
-    width: 100%;
-    height: 20vh;
-    background-color: #e7e7e7;
-    box-shadow: inset 0px 0px 7px rgb(0, 0, 0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*conteudo*/
 
 .sobre-mim02{
     margin-left: 0px;
@@ -359,35 +355,58 @@ section:nth-of-type(2){
     font-size: 77px;
 }
 
-#title02{
-    font-size: 3rem;
-    color: black;
+div.container01{
+    display: block;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%)
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Grid*/
-
-#text-fim{
-    background-color: #e7e7e7;
-    text-align: center;
-    font-weight: 700;
-}
-
-#text-sec{
-    height: 0;
-}
-
-#pagina01-mobile{
+hr#hr-para-mobile{
     display: none;
 }
 
-#pagina02-mobile{
-    display: none;
+svg.icon{
+    display: block;
+    width: 35px;
+    height: 35px;
+    margin: 0px;
+}
+
+li{
+    list-style: none;
+}
+
+.icon04{
+    width: 3vw;
+    height: 3vh;
+    color: #fff;
+}
+
+.moon{
+    width: 2vw;
+    height: 2vh;
+    color: #fff;
+    margin-bottom: 1vh;
+}
+
+.sun{
+    width: 2vw;
+    height: 2vh;
+    color: #fff;
+    margin-bottom: 1vh;
+}
+
+
+li.content{
+    display: block;
+    position: absolute;
+    margin: auto;
+}
+
+li{
+    list-style: none;
 }
 
 /*Modo escuro*/
@@ -395,6 +414,15 @@ section:nth-of-type(2){
 input[type="checkbox"]{
     display: none;
 }
+
+/*Navbar*/
+
+.dark nav{
+    background-color: rgba(0, 0, 0, 0.719);
+    transition: 0.3s;
+}
+
+/*Experiência de usuário*/
 
 div#modo-escuro-btn{
     display: flex;
@@ -443,20 +471,6 @@ svg.moon{
     display: none;
 }
 
-.moon{
-    width: 2vw;
-    height: 2vh;
-    color: #fff;
-    margin-bottom: 1vh;
-}
-
-.sun{
-    width: 2vw;
-    height: 2vh;
-    color: #fff;
-    margin-bottom: 1vh;
-}
-
 .dark svg.moon{
     display: block;
 }
@@ -465,101 +479,35 @@ svg.moon{
     display: none;
 }
 
-.dark nav{
-    background-color: rgba(0, 0, 0, 0.719);
-    transition: 0.3s;
+@media (min-width: 250px) and (max-width: 600px){
+
+
+    h1.sobre-mim02{
+        margin-left: 0px;
+        margin-bottom: 2vh;
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.692);
+        cursor: default;
+    }
+
+    h1.sobre-mim02:hover{
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.692);
+    }
+
+    div.container01{
+        display: block;
+        position: absolute;
+        top: 50vh;
+        right: 1vh;
+    }
 }
-
-.dark section:nth-of-type(2){
-    background-color: #202020;
-    transition: 0.3s;
-}
-
-.dark #title02{
-    color: #fff;
-    transition: 0.3s;
-}
-
-.dark .space{
-    background-color: #202020;
-    transition: 0.3s;
-}
-
-.dark .text{
-    background-color: #303030;
-    transition: 0.3s;
-}
-
-.dark .text p{
-    color: #fff;
-    transition: 0.3s;
-}
-
-.dark .text h3{
-    color: #fff;
-    transition: 0.3s;
-}
-
-.dark .text h2{
-    color: #fff;
-    transition: 0.3s;
-}
-
-.dark section:nth-of-type(3){
-    background-color: #303030;
-    transition: 0.3s;
-}
-
-.dark .br-space{
-    background-color: #303030;
-    transition: 0.3s;
-}
-
-.dark #text-fim{
-    background-color: #000;
-    color: #fff;
-}
-
-/*link topo*/
-
-#link-topo{
-    text-decoration: none;
-    color: white;
-    background-color: rgba(175, 175, 175, 0);
-    padding: 2px;
-    position: fixed;
-    right: 10px;
-    bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px black;
-    margin-top: 10px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-}
-
-#link-topo:hover{
-    background-color: #000000;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-    margin-top:10px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-    margin-right: 5px;
-    color: #fff;
-}
-
-svg.icon{
-    display: block;
-    width: 35px;
-    height: 35px;
-    color: #fff;
-}
-
-/*Resoponsivo*/
 
 @media (min-width: 800px) and (max-width: 1200px){
+
+    hr#hr-para-mobile{
+        display: flex;
+    }
 
     ul.dropdown-menu.dropdown-menu-dark{
         width: 50vw;
@@ -568,7 +516,7 @@ svg.icon{
 }
 
 @media (min-width: 320px) and (max-width: 800px){
-    
+
     ul.dropdown-menu.dropdown-menu-dark{
         width: 100vw;
         border-radius: 5px;
@@ -576,12 +524,14 @@ svg.icon{
 }
 
 @media (min-width: 320px) and (max-width: 1200px){
+
     /*Navbar*/
 
     div#link-para-outras-paginas{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 10px;
     }
 
     div.btn{
@@ -649,125 +599,11 @@ svg.icon{
         color: rgb(255, 255, 255);
         font-family: 'Ubuntu', sans-serif;
     }
-}
 
-@media (min-width: 250px) and (max-width: 600px){
-
-        /*link para o topo*/
-
-        #link-topo{
-            text-decoration: none;
-            color: white;
-            background-color: rgba(175, 175, 175, 0);
-            padding: 2px;
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px black;
-            margin-top: 10px;
-            margin-left: 5px;
-            margin-bottom: 15px;
-            margin-right: 5px;
-            z-index: 100;
-        }
     
-        #link-topo:active{
-            background-color: #000000;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px black;
-            margin-top:10px;
-            margin-left: 5px;
-            margin-bottom: 15px;
-            margin-right: 5px;
-        }
-
-    /*Navbar*/
-
-    li.content{
-        display: none;
-    }
-
-    hr#hr-para-mobile{
-        display: flex;
-    }
-
-    div.btn{
-        background-color: transparent;
-        border: 0;
-        padding: 0;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 1px;
-        margin-bottom: 0;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    div.btn::after{
-        content: " ";
-        width: 0%;
-        height: 2px;
-        background-color: #fff;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: 0.5s ease-in-out;
-    }
-    
-    div.btn:hover::after{
+    .row{
+        margin: 0px;
         width: 100%;
     }
-
-    hr.line05{
-        margin-top: 0px;
-        margin: 0;
-    } 
-
-    /*Primeira parte*/
-
-    div.container01{
-        display: block;
-        position: absolute;
-        top: 50vh;
-        right: 1vh;
-    }
-
-    .sobre-mim02{
-        margin-left: 0px;
-        margin-bottom: 2vh;
-        font-size: 45px;
-        color: rgba(255, 255, 255, 0.692);
-        cursor: default;
-    }
-
-    .sobre-mim02:hover{
-        font-size: 45px;
-        color: rgba(255, 255, 255, 0.692);
-    }
-
-    /*paginas*/
-
-    #pagina01{
-        display: none;
-    }
-
-    #pagina02{
-        display: none;
-    }
-
-    #pagina01-mobile{
-        display: block;
-    }
-
-    #pagina02-mobile{
-        display: block;
-    }
-
-    #text-fim{
-        display: none;
-    }
 }
+
