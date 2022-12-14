@@ -355,6 +355,7 @@ section:nth-of-type(2){
 
 #all-cards{
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .card{
@@ -742,6 +743,47 @@ svg.moon{
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 5px;
+}
+
+/*Responsivo*/
+
+div#all-cards-tablet{
+    display: none;
+}
+
+div#all-cards-celular{
+    display: none;
+}
+
+@media (min-width: 750px) and (max-width: 1000px){
+    div#all-cards-tablet{
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
+
+    div#all-cards{
+        display: none;
+    }
+
+    div#all-cards-celular{
+        display: none;
+    }
+}
+
+@media (min-width: 250px) and (max-width: 750px){
+
+    div#all-cards-celular{
+        display: block;
+    }
+
+    div#all-cards-tablet{
+        display: none;
+    }
+
+    div#all-cards{
+        display: none;
+    }
 }
 
 @media (min-width: 250px) and (max-width: 600px){
