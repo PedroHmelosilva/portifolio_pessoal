@@ -247,7 +247,7 @@ ul.dropdown-menu.dropdown-menu-dark{
     text-decoration: none;
     transition: 0.2s;
     border-radius: 20px;
-    margin: 5px;
+    margin: 0px;
     padding: 5px;
     width: 200px;
 }
@@ -343,7 +343,7 @@ section:nth-of-type(1){
 }
 
 section:nth-of-type(2){
-    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -372,7 +372,7 @@ section:nth-of-type(5){
 }
 
 section:nth-of-type(6){
-    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
     background-color: #eceff1;
     display: flex;
     align-items: center;
@@ -388,7 +388,7 @@ section:nth-of-type(7){
 }
 
 section:nth-of-type(8){
-    box-shadow: inset 0 0 10px rgb(0, 0, 0);
+    box-shadow: inset 0 0 5px rgb(0, 0, 0);
     background-color: #eceff1;
     display: flex;
     align-items: center;
@@ -415,7 +415,7 @@ div.container-relative{
     position: relative;
     background-color: #e7e7e7;
     margin-bottom: 3vh;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 div.container-relative img{
@@ -1313,7 +1313,7 @@ div.formulario-para-entrar-em-contato h1:hover{
 #link-topo{
     text-decoration: none;
     color: white;
-    background-color: rgb(175, 175, 175);
+    background-color: rgba(175, 175, 175, 0);
     padding: 2px;
     position: fixed;
     right: 10px;
@@ -1583,6 +1583,22 @@ div#tablet-cards{
     display: none;
 }
 
+@media (min-width: 800px) and (max-width: 1200px){
+
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 50vw;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 800px){
+
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 100vw;
+        border-radius: 5px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 1200px){
 
     div.container-creditos{
@@ -1678,10 +1694,6 @@ div#tablet-cards{
             margin-top: 0px;
             margin: 0;
         } 
-
-        ul.dropdown-menu.dropdown-menu-dark{
-            width: 250px;
-        }
     
         li.content{
             display: none;
@@ -1832,7 +1844,7 @@ div#tablet-cards{
     #link-topo{
         text-decoration: none;
         color: white;
-        background-color: rgb(175, 175, 175);
+        background-color: rgba(175, 175, 175, 0);
         padding: 2px;
         position: fixed;
         right: 10px;

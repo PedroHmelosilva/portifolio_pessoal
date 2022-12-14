@@ -141,6 +141,8 @@ nav h1:hover{
 
 .nav-list li{
     letter-spacing: 3px;
+    margin: 0 auto;
+    padding: auto;
 }
 
 .mobile-menu{
@@ -322,7 +324,7 @@ section:nth-of-type(2){
     width: 100%;
     height: 25vh;
     background-color: rgb(145, 145, 145);
-    box-shadow: inset 0px 0px 10px rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 5px rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -583,7 +585,7 @@ hr#hr-para-mobile{
 #link-topo{
     text-decoration: none;
     color: white;
-    background-color: rgb(175, 175, 175);
+    background-color: rgba(175, 175, 175, 0);
     padding: 2px;
     position: fixed;
     right: 10px;
@@ -949,6 +951,22 @@ svg.moon{
     }
 }
 
+@media (min-width: 800px) and (max-width: 1200px){
+
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 50vw;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 800px){
+    
+    ul.dropdown-menu.dropdown-menu-dark{
+        width: 100vw;
+        border-radius: 5px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 1200px){
             /*Navbar*/
 
@@ -991,10 +1009,6 @@ svg.moon{
                 margin-top: 0px;
                 margin: 0;
             } 
-    
-            ul.dropdown-menu.dropdown-menu-dark{
-                width: 250px;
-            }
         
             li.content{
                 display: none;
@@ -1040,7 +1054,7 @@ svg.moon{
         #link-topo{
             text-decoration: none;
             color: white;
-            background-color: rgb(175, 175, 175);
+            background-color: rgba(175, 175, 175, 0);
             padding: 2px;
             position: fixed;
             right: 10px;
@@ -1064,10 +1078,6 @@ svg.moon{
             margin-bottom: 15px;
             margin-right: 5px;
         }
-
-    ul.dropdown-menu.dropdown-menu-dark{
-        width: 250px;
-    }
 
     div.container01{
         display: flex;
