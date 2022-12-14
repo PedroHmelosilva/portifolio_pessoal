@@ -351,6 +351,11 @@ section:nth-of-type(2){
     width: 100%;
 }
 
+section#certificados{
+    background-image: url(../imagens/img13.jpg);
+    height: 100vh;
+}
+
 /*cards*/
 
 #all-cards{
@@ -566,6 +571,30 @@ div.container01 h3{
 div.container01 h3:hover{
     transition: .3s;
     color: rgb(255, 255, 255);
+}
+
+#certificados{
+    position: relative;
+}
+
+#certificados div{
+    display: block;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+#certificados div h1{
+    margin-left: 0px;
+    font-size: 75px;
+    color: rgb(196, 196, 196);
+    cursor: default;
+}
+
+#certificados div h1:hover{
+    font-size: 77px;
+    color: #fff;
 }
 
 hr#hr-para-mobile{
@@ -787,6 +816,18 @@ div#all-cards-celular{
 }
 
 @media (min-width: 250px) and (max-width: 600px){
+
+    #certificados div h1{
+        margin-left: 0px;
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.692);
+        cursor: default;
+    }
+    
+    #certificados div h1:hover{
+        font-size: 45px;
+        color: rgba(255, 255, 255, 0.692);
+    }
 
     #card-style{
         margin-top: 1rem;
