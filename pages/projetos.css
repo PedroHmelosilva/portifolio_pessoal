@@ -804,6 +804,8 @@ div#all-cards-celular{
 
     div#all-cards-celular{
         display: block;
+        margin-top: 1vh;
+        margin-bottom: 1vh
     }
 
     div#all-cards-tablet{
