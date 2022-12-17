@@ -687,6 +687,14 @@ section{
     transition: .3s;
 }
 
+.dark #link-topo{
+    color: #fff;
+}
+
+.dark #link-topo:hover{
+    color: #fff;
+}
+
 /*Navbar*/
 
 .dark nav{
@@ -755,7 +763,7 @@ svg.moon{
 
 #link-topo{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: rgba(175, 175, 175, 0);
     padding: 2px;
     position: fixed;
@@ -771,6 +779,7 @@ svg.moon{
 }
 
 #link-topo:hover{
+    color: #fff;
     background-color: #000000;
     padding: 10px;
     border-radius: 10px;
