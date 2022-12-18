@@ -359,8 +359,7 @@ section#certificados{
 /*cards*/
 
 #all-cards{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .card{
@@ -510,6 +509,19 @@ a.btn.btn-primary02:hover::after{
 }
 
 /*conteudo*/
+
+p.footer{
+    margin: 0;
+    background-color: #363636;
+    padding: .5rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+#card-style{
+    margin-top: 1rem;
+}
 
 .icons-linguages{
     background-color: #d4d4d4;
@@ -802,8 +814,7 @@ div#all-cards-celular{
 
 @media (min-width: 750px) and (max-width: 1000px){
     div#all-cards-tablet{
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
         display: block;
     }
 
@@ -820,8 +831,7 @@ div#all-cards-celular{
 
     div#all-cards-celular{
         display: block;
-        margin-top: 1vh;
-        margin-bottom: 1vh
+        margin-bottom: 1rem
     }
 
     div#all-cards-tablet{

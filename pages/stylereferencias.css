@@ -234,6 +234,19 @@ li a.dropdown-item:active{
 
 /*Conteudo*/
 
+div#footer{
+    background-color: #363636;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 100%;
+}
+
+div#footer p{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
 div.container01{
     display: block;
     position: absolute;
