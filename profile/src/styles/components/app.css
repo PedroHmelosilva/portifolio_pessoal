@@ -1,0 +1,13 @@
+#portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  gap: 3rem;
+  padding-top: 0;
+}
+#portfolio h1 {
+  width: 100%;
+  font-size: 5rem;
+  margin-bottom: 4rem;
+  color: #e7e7e7;
+}/*# sourceMappingURL=app.css.map */

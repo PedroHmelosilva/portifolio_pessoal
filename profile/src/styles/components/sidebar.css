@@ -1,0 +1,32 @@
+#sidebar {
+  background-color: #111;
+  flex: 1 1 0;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  padding: 3rem 0;
+}
+#sidebar img {
+  max-width: 70%;
+  border-radius: 50%;
+  position: absolute;
+  top: -3rem;
+}
+#sidebar .title {
+  color: #a6a6a6;
+  background-color: #1d1d1d;
+  border-radius: 5px;
+  margin-top: 20rem;
+  padding: 0.8rem 1.2rem;
+}
+#sidebar .btn {
+  padding: 1rem 1.2rem;
+  color: #fff;
+  background: linear-gradient(90deg, #202020, rgba(32, 32, 32, 0.4392156863), rgba(84, 102, 114, 0));
+  text-decoration: none;
+  border-radius: 3rem;
+  background: linear-gradient(90deg, #202020, rgba(32, 32, 32, 0.4392156863), rgba(84, 102, 114, 0));
+}/*# sourceMappingURL=sidebar.css.map */

@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica";
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #464646;
+}
+
+a, svg {
+  transition: 0.4s;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgba(155, 155, 155, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  width: 15px;
+  background-color: rgb(83, 83, 83);
+  border-radius: 10px;
+  -webkit-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
+}/*# sourceMappingURL=main.css.map */
