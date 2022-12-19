@@ -385,6 +385,14 @@ section#certificados{
     border-radius: 10px;
 }
 
+#photogalery{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 95%;
+    height: 50%;
+}
+
 div.card-body{
     padding-top: 0;
 }
