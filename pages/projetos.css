@@ -518,6 +518,13 @@ a.btn.btn-primary02:hover::after{
 
 /*conteudo*/
 
+#card-img{
+    width: 95%;
+    border-radius: 5px;
+    height: 100%;
+    margin: .5rem auto;
+}
+
 p.footer{
     margin: 0;
     background-color: #363636;
