@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(1){
+    background-image: url(../img/maple-gab92b4116_1280.jpg);
+    height: 50vh;
+}
+
+section:nth-of-type(2){
+    min-height: 50vh;
+    box-shadow: inset 0px 1.5px 5px rgb(58, 58, 58);
+    background-color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: #202020;
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: #202020;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+    color: #202020;
+}
+
+p{
+    color: #1d1d1d;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    text-indent: 3rem;
+    line-height: 2.7rem;
+    margin: 1rem 0;
+    text-align: justify;
+}
+
+#text-content{
+    margin-top: 1.5rem;
+    width: 80%;
+}
+
+#info-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+#info-footer p{
+    background-color: #ccc;
+    text-indent: 0;
+    padding: .2rem 1rem;
+    border-radius: 10px;
+}
+
+#img-footer{
+    height: 200px;
+    display: block;
+    margin: 1.5rem auto;
+}
+
+.line{
+    border-bottom: 1px solid #202020;
+}
+
+@media (min-width: 320px) and (max-width: 800px){
+
+    section:nth-of-type(1){
+        height: 30vh;
+    }
+
+    h1{
+        font-size: 3.7rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    h3{
+        font-size: 1.6rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+        line-height: 2rem;
+    }
+    
+    #text-content{
+        margin-top: 1.5rem;
+        width: 92%;
+    }
+}
