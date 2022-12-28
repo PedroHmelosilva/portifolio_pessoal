@@ -833,6 +833,10 @@ div#all-cards-celular{
         display: block;
     }
 
+    #desktop-hr{
+        display: none;
+    }
+
     div#all-cards{
         display: none;
     }
@@ -874,10 +878,6 @@ div#all-cards-celular{
 
     #card-style{
         margin-top: 1rem;
-    }
-
-    #desktop-hr{
-        display: none;
     }
 
     h1.sobre-mim02{
