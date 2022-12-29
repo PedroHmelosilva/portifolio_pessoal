@@ -1322,9 +1322,17 @@ div.formulario-para-entrar-em-contato h1:hover{
 
 /*link para o topo*/
 
+.dark #link-topo{
+    color: #fff;
+}
+
+.dark #link-topo:hover{
+    color: #fff;
+}
+
 #link-topo{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: rgba(175, 175, 175, 0);
     padding: 2px;
     position: fixed;
@@ -1340,6 +1348,7 @@ div.formulario-para-entrar-em-contato h1:hover{
 }
 
 #link-topo:hover{
+    color: #fff;
     background-color: #000000;
     padding: 10px;
     border-radius: 10px;
@@ -1850,36 +1859,6 @@ div#tablet-cards{
 }
 
 @media (min-width: 320px) and (max-width: 600px){
-
-    /*link para o topo*/
-
-    #link-topo{
-        text-decoration: none;
-        color: white;
-        background-color: rgba(175, 175, 175, 0);
-        padding: 2px;
-        position: fixed;
-        right: 10px;
-        bottom: 10px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 5px black;
-        margin-top: 10px;
-        margin-left: 5px;
-        margin-bottom: 15px;
-        margin-right: 5px;
-        z-index: 100;
-    }
-
-    #link-topo:active{
-        background-color: #000000;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 10px black;
-        margin-top:10px;
-        margin-left: 5px;
-        margin-bottom: 15px;
-        margin-right: 5px;
-    }
 
     div#mobile{
         display: block;

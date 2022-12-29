@@ -533,11 +533,11 @@ svg.moon{
     color: #fff;
 }
 
-/*link topo*/
+/*link para o topo*/
 
 #link-topo{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     background-color: rgba(175, 175, 175, 0);
     padding: 2px;
     position: fixed;
@@ -549,9 +549,11 @@ svg.moon{
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 5px;
+    z-index: 100;
 }
 
 #link-topo:hover{
+    color: #fff;
     background-color: #000000;
     padding: 10px;
     border-radius: 10px;
@@ -560,6 +562,9 @@ svg.moon{
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 5px;
+}
+
+#link-topo:hover svg{
     color: #fff;
 }
 
@@ -567,6 +572,13 @@ svg.icon{
     display: block;
     width: 35px;
     height: 35px;
+}
+
+.dark #link-topo svg{
+    color: #fff;
+}
+
+.dark #link-topo:hover{
     color: #fff;
 }
 
@@ -665,36 +677,6 @@ svg.icon{
 }
 
 @media (min-width: 250px) and (max-width: 600px){
-
-        /*link para o topo*/
-
-        #link-topo{
-            text-decoration: none;
-            color: white;
-            background-color: rgba(175, 175, 175, 0);
-            padding: 2px;
-            position: fixed;
-            right: 10px;
-            bottom: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 5px black;
-            margin-top: 10px;
-            margin-left: 5px;
-            margin-bottom: 15px;
-            margin-right: 5px;
-            z-index: 100;
-        }
-    
-        #link-topo:active{
-            background-color: #000000;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px black;
-            margin-top:10px;
-            margin-left: 5px;
-            margin-bottom: 15px;
-            margin-right: 5px;
-        }
 
     /*Navbar*/
 
